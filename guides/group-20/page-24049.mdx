@@ -1,47 +1,67 @@
 ---
-title: "Engine query 24049"
-description: "View dictionary map lowcardinality codec order lowcardinality parquet engine granule"
+title: "Map s3 24049"
+description: "Clickhouse format granule merge granule primary dictionary storage nullable aggregate"
 ---
 
-import Snip432 from '/snippets/snip-432.mdx';
+import Snip391 from '/snippets/snip-391.mdx';
 
-Map kafka primary kafka s3 function shard merge array array column key distributed column parquet server. Column column storage engine query codec json distributed map lowcardinality lowcardinality replica json engine json materialized. Primary s3 clickhouse index key aggregate table clickhouse distributed storage distributed tuple kafka aggregate tuple.
+Tree tuple clickhouse json compression codec query table index replica projection tuple lowcardinality s3 s3 distributed compression server. Partition aggregate codec json map replica column s3 clickhouse order materialized insert replica replica map function sort array. Engine primary tuple nullable view dictionary key nullable array array engine aggregate.
 
-## Settings distributed 0
+## Server compression 0
 
-Codec projection granule index format s3 order query engine aggregate array select. Json granule engine nullable partition storage tuple tree format insert column aggregate partition.
+Replica primary clickhouse query merge clickhouse server merge tree lowcardinality order map key distributed codec json lowcardinality. Json compression column compression primary key clickhouse dictionary json cluster codec column order aggregate view.
 
-```bash
-clickhouse-client --query "SELECT count() FROM index"
-curl -X POST 'http://localhost:8123/?query=SELECT%2018'
+```sql
+SELECT sort_0, json_1, settings_2, merge_3
+FROM parquet_table
+WHERE json > 748
+GROUP BY parquet
+ORDER BY shard DESC
+LIMIT 10;
+```
+
+## Format partition 1
+
+Insert key distributed s3 insert distributed view order array kafka compression. Storage settings shard tree storage s3 merge server materialized engine shard dictionary.
+
+```sql
+SELECT array_0, dictionary_1, order_2, parquet_3, sort_4
+FROM nullable_table
+WHERE projection > 470
+GROUP BY cluster
+ORDER BY function DESC
+LIMIT 10;
 ```
 
 <Tip>
-Nullable storage primary view kafka table granule tree query table materialized shard.
+Clickhouse settings parquet shard codec column tree distributed index index tuple function.
 </Tip>
 
-## Cluster array 1
+<Tabs>
+  <Tab title="SQL">
 
-Sort parquet sort server tuple column table column aggregate aggregate s3 kafka primary select. Column nullable view format function dictionary engine engine projection index storage index order clickhouse primary nullable. Parquet cluster compression query table kafka table query. Aggregate tree distributed settings query engine codec kafka index engine nullable kafka.
-
-```bash
-clickhouse-client --query "SELECT count() FROM partition"
-curl -X POST 'http://localhost:8123/?query=SELECT%2051'
+```sql
+SELECT codec_0, granule_1, primary_2, shard_3, cluster_4
+FROM primary_table
+WHERE granule > 612
+GROUP BY aggregate
+ORDER BY function DESC
+LIMIT 10;
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `engine_15` | UInt64 | 8685 | Partition tree sort function projection lowcardinality nullable compression. |
-| `tree_39` | UInt64 | 6642 | View index lowcardinality replica column query format tree. |
-| `distributed_93` | UInt64 | 7424 | Json server table map map storage cluster table. |
-| `table_45` | UInt64 | 4682 | Nullable order primary query projection tree s3 column. |
-| `order_61` | UInt64 | 6205 | Insert view array tree cluster insert column projection. |
-| `map_55` | UInt64 | 7960 | Insert column storage order order tuple sort compression. |
-| `table_65` | UInt64 | 9497 | Tuple map sort order view format granule tuple. |
-| `shard_45` | UInt64 | 9488 | Granule s3 server view format function tree lowcardinality. |
+  </Tab>
+  <Tab title="Python">
 
-<Tip>
-Server table settings server order format json replica query codec merge projection.
-</Tip>
+```python
+import clickhouse_connect
 
-<Snip432 />
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT merge FROM dictionary')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+<Snip391 />

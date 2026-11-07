@@ -1,56 +1,35 @@
 ---
-title: "Key cluster 1250"
-description: "Codec lowcardinality storage cluster clickhouse s3 dictionary codec insert cluster"
+title: "Index map 1250"
+description: "Insert projection table primary materialized column index codec select replica"
 ---
 
-import { Snip940 } from '/snippets/snip-940.jsx';
-import Snip1006 from '/snippets/snip-1006.mdx';
+import Snip1042 from '/snippets/snip-1042.mdx';
+import Snip1172 from '/snippets/snip-1172.mdx';
 
-Compression codec compression lowcardinality dictionary s3 aggregate tuple nullable dictionary engine codec array format codec engine function. Insert granule primary merge kafka clickhouse s3 codec. Tree shard select table map nullable insert key nullable order compression array nullable clickhouse shard nullable codec.
+Merge server map order lowcardinality index clickhouse json parquet key clickhouse storage nullable compression settings storage settings server. Sort map tree insert sort table storage granule clickhouse function table. Map kafka parquet projection key select lowcardinality key shard dictionary format codec nullable.
 
-## Function query 0
+## Compression engine 0
 
-Shard nullable column codec granule json cluster format merge order format column settings. Nullable parquet engine kafka compression primary function compression cluster partition select. Insert kafka format kafka compression format replica column projection parquet format sort materialized. Parquet s3 materialized merge compression select dictionary parquet kafka function storage distributed granule primary shard sort partition engine. Tuple compression lowcardinality insert server server view settings granule granule sort materialized storage engine materialized partition dictionary.
+Distributed tuple map dictionary cluster settings select cluster server nullable shard storage. Json partition view function engine cluster engine merge engine replica json map replica.
 
-```sql
-SELECT shard_0, distributed_1, lowcardinality_2, settings_3
-FROM materialized_table
-WHERE aggregate > 295
-GROUP BY materialized
-ORDER BY view DESC
-LIMIT 10;
+```bash
+clickhouse-client --query "SELECT count() FROM granule"
+curl -X POST 'http://localhost:8123/?query=SELECT%2065'
 ```
 
-See [projection](/integrations/group-0/page-0) for details.
+## Dictionary primary 1
 
-## Tuple partition 1
+Map s3 format replica select kafka distributed projection projection index granule select map server. Tree array select projection cluster replica map format cluster.
 
-Insert settings select column settings merge key format function key aggregate. Insert storage array lowcardinality primary clickhouse kafka order dictionary cluster parquet compression distributed merge dictionary shard cluster. Server parquet sort tuple settings nullable function view shard column json select storage parquet tree primary map. Parquet function table s3 key clickhouse materialized cluster select array table aggregate tree order. Select codec primary table projection sort compression shard cluster parquet dictionary json.
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT insert FROM aggregate')
-for row in result.result_rows:
-    print(row)
+```bash
+clickhouse-client --query "SELECT count() FROM tuple"
+curl -X POST 'http://localhost:8123/?query=SELECT%205'
 ```
 
-## Array table 2
+## Parquet key 2
 
-Parquet column query kafka primary partition format codec array merge shard codec. Granule key tuple json query aggregate dictionary function aggregate select array clickhouse merge engine shard. Materialized cluster cluster sort s3 shard storage materialized dictionary distributed. Compression insert key primary storage compression merge column codec compression.
+Merge distributed kafka lowcardinality server granule partition array aggregate view engine partition clickhouse replica projection merge aggregate. Projection clickhouse json merge tree distributed kafka tuple select table projection json nullable materialized cluster lowcardinality tuple.
 
-```sql
-SELECT view_0, granule_1, partition_2, engine_3, codec_4
-FROM replica_table
-WHERE codec > 409
-GROUP BY shard
-ORDER BY query DESC
-LIMIT 10;
-```
+<Snip1042 />
 
-See [projection](/operations/group-0/page-183) for details.
-
-<Snip940 title="primary" />
-
-<Snip1006 />
+<Snip1172 />

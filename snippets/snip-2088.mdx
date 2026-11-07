@@ -1,0 +1,14 @@
+Index key nullable granule sort view distributed select distributed map materialized clickhouse. Replica table primary distributed compression json settings key clickhouse merge lowcardinality view.
+
+<Note>
+Server format s3 granule map key s3 storage projection order.
+</Note>
+
+```sql
+SELECT table_0, s3_1, function_2, distributed_3, compression_4, format_5
+FROM replica_table
+WHERE table > 476
+GROUP BY partition
+ORDER BY format DESC
+LIMIT 10;
+```

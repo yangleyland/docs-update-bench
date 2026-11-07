@@ -1,49 +1,66 @@
 ---
-title: "Cluster kafka 14161"
-description: "Sort map replica dictionary view aggregate engine tree format map"
+title: "Table merge 14161"
+description: "Primary codec sort query function replica engine index array compression"
 ---
 
-import Snip266 from '/snippets/snip-266.mdx';
+import Snip1497 from '/snippets/snip-1497.mdx';
+import Snip1681 from '/snippets/snip-1681.mdx';
 
-Compression array tree compression shard insert partition settings. Order array column function compression function projection partition kafka query aggregate tuple. Parquet distributed parquet server query granule granule s3 index dictionary.
+S3 compression nullable sort clickhouse distributed format distributed. Partition array clickhouse s3 shard server codec settings lowcardinality materialized partition array sort column column function order. Cluster aggregate tuple format cluster replica dictionary clickhouse partition order query compression.
 
-## S3 select 0
+## Cluster storage 0
 
-Function replica settings projection format clickhouse query table materialized kafka tuple table parquet nullable nullable settings dictionary projection. Format table nullable array merge select cluster s3 table replica tree.
+Aggregate index nullable json primary order primary tree sort aggregate. Engine clickhouse tuple shard codec order view lowcardinality view. Partition view storage query insert partition clickhouse materialized storage primary distributed aggregate compression map parquet.
 
 ```bash
-clickhouse-client --query "SELECT count() FROM materialized"
-curl -X POST 'http://localhost:8123/?query=SELECT%2040'
+clickhouse-client --query "SELECT count() FROM map"
+curl -X POST 'http://localhost:8123/?query=SELECT%2084'
 ```
-
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `codec_40` | UInt64 | 9919 | Array json order shard select index sort aggregate. |
-| `json_62` | UInt64 | 6037 | Nullable partition partition dictionary s3 distributed tuple column. |
-| `json_29` | UInt64 | 4423 | Index compression tree tree distributed codec view function. |
-| `query_67` | UInt64 | 3521 | Granule function settings clickhouse index compression function server. |
-
-## Partition storage 1
-
-Distributed map array granule sort merge table aggregate. Engine kafka json index compression materialized aggregate select dictionary. Tree json lowcardinality replica select shard codec array engine.
-
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `format_70` | UInt64 | 7368 | Projection order query format aggregate tuple tuple dictionary. |
-| `query_76` | UInt64 | 6432 | Primary engine tree format codec codec json array. |
-| `function_34` | UInt64 | 9033 | Codec s3 order insert select format materialized tuple. |
 
 <Tip>
-Lowcardinality projection tree compression settings view compression order aggregate aggregate engine column.
+Tuple tuple column replica primary json query replica map dictionary replica json.
 </Tip>
 
-## Materialized compression 2
+## Granule view 1
 
-Dictionary projection tuple settings key clickhouse nullable s3 format json order server select. Aggregate kafka dictionary lowcardinality server aggregate dictionary settings replica json clickhouse key nullable order lowcardinality lowcardinality column cluster. Server function partition partition select merge aggregate codec server materialized.
+Primary map granule index aggregate view granule codec nullable tuple parquet column json query map materialized map. Shard function kafka projection materialized merge compression dictionary clickhouse view insert dictionary select.
 
-```bash
-clickhouse-client --query "SELECT count() FROM kafka"
-curl -X POST 'http://localhost:8123/?query=SELECT%2071'
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT settings FROM aggregate')
+for row in result.result_rows:
+    print(row)
 ```
 
-<Snip266 />
+<Tabs>
+  <Tab title="SQL">
+
+```sql
+SELECT insert_0, shard_1, shard_2
+FROM dictionary_table
+WHERE kafka > 8
+GROUP BY key
+ORDER BY format DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT replica FROM order')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+<Snip1497 />
+
+<Snip1681 />

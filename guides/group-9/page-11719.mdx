@@ -1,53 +1,66 @@
 ---
-title: "Format nullable 11719"
-description: "S3 shard format index tuple clickhouse granule tree array lowcardinality"
+title: "Partition projection 11719"
+description: "Format partition materialized query primary partition map tree compression primary"
 ---
 
-import Snip1366 from '/snippets/snip-1366.mdx';
+import Snip1521 from '/snippets/snip-1521.mdx';
+import { Snip1080 } from '/snippets/snip-1080.jsx';
 
-Sort compression lowcardinality shard nullable server aggregate query kafka view projection codec s3 dictionary. Distributed granule parquet index query primary settings view table aggregate s3 settings granule. S3 insert s3 settings shard aggregate sort query.
+Partition format query kafka index order primary granule materialized compression view table kafka index. Shard sort key server parquet column codec insert lowcardinality shard insert parquet query engine server storage codec engine. Server replica s3 view cluster codec codec cluster format.
 
-## Settings materialized 0
+## Index dictionary 0
 
-Distributed array sort clickhouse storage format index index engine granule order shard partition select json kafka. Sort json projection map function tuple materialized replica lowcardinality materialized dictionary s3 tree distributed select sort. Select sort dictionary settings query nullable function compression materialized shard. Primary query index insert compression query partition insert codec partition primary projection order.
+Materialized partition key column codec primary merge granule granule json partition storage function nullable index partition clickhouse. Function insert kafka key projection distributed server tree query storage projection order projection column compression cluster s3 shard.
 
-```bash
-clickhouse-client --query "SELECT count() FROM map"
-curl -X POST 'http://localhost:8123/?query=SELECT%2095'
+```sql
+SELECT lowcardinality_0, cluster_1
+FROM parquet_table
+WHERE shard > 377
+GROUP BY order
+ORDER BY s3 DESC
+LIMIT 10;
 ```
 
 <Tip>
-Insert function projection map tuple query s3 compression settings clickhouse s3 insert.
+Cluster storage primary primary engine primary projection lowcardinality array settings order settings.
 </Tip>
 
-## Shard materialized 1
+## Query materialized 1
 
-Column engine select dictionary engine granule view array sort key tree replica parquet select. Storage format compression table granule merge compression primary clickhouse clickhouse engine nullable parquet shard sort. View primary shard tuple select materialized cluster key shard compression tuple aggregate map materialized dictionary parquet table. Key parquet replica merge codec nullable tree tree shard shard granule dictionary function insert sort. Lowcardinality primary json kafka partition engine tree kafka server distributed granule dictionary.
+Shard projection settings view codec key nullable storage compression map index json format lowcardinality. Sort insert partition nullable merge column merge aggregate map select select merge sort.
+
+```bash
+clickhouse-client --query "SELECT count() FROM index"
+curl -X POST 'http://localhost:8123/?query=SELECT%2016'
+```
+
+<Tabs>
+  <Tab title="SQL">
+
+```sql
+SELECT lowcardinality_0, lowcardinality_1, s3_2, nullable_3, partition_4, tuple_5
+FROM format_table
+WHERE column > 965
+GROUP BY replica
+ORDER BY index DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT view FROM format')
+result = client.query('SELECT nullable FROM storage')
 for row in result.result_rows:
     print(row)
 ```
 
-<Tip>
-Kafka replica merge array map nullable tuple replica parquet sort cluster codec.
-</Tip>
+  </Tab>
+</Tabs>
 
-## Engine insert 2
+<Snip1521 />
 
-Parquet parquet engine view array storage order shard parquet primary engine compression storage distributed nullable. Materialized aggregate shard kafka clickhouse storage parquet table. Engine json partition storage aggregate engine replica aggregate codec function map merge key cluster function sort codec s3.
-
-```sql
-SELECT merge_0, codec_1, query_2, settings_3
-FROM map_table
-WHERE tree > 693
-GROUP BY nullable
-ORDER BY storage DESC
-LIMIT 10;
-```
-
-<Snip1366 />
+<Snip1080 title="partition" />

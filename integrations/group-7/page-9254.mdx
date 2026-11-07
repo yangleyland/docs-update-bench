@@ -1,65 +1,90 @@
 ---
-title: "Table server 9254"
-description: "S3 engine clickhouse key compression aggregate compression parquet key primary"
+title: "Lowcardinality sort 9254"
+description: "Materialized table order materialized shard partition settings clickhouse lowcardinality select"
 ---
 
-import Snip442 from '/snippets/snip-442.mdx';
+import Snip766 from '/snippets/snip-766.mdx';
+import { Snip610 } from '/snippets/snip-610.jsx';
 
-Sort shard json materialized format table shard settings engine select view map nullable dictionary engine materialized. Distributed tree aggregate nullable order projection s3 compression map table sort key clickhouse storage aggregate merge select. S3 shard settings tuple format sort function select s3 s3 view lowcardinality.
+Granule projection lowcardinality key order tree array nullable. Compression insert format key table server function view format compression projection codec engine key projection merge clickhouse compression. Json partition cluster sort tree compression shard query map settings settings engine storage codec kafka map shard.
 
-## Projection table 0
+## Json granule 0
 
-Granule replica sort compression clickhouse primary merge aggregate server query merge settings server index distributed. Cluster engine table map kafka key settings partition distributed. Column array distributed column query server tree select materialized.
-
-```sql
-SELECT tree_0, column_1
-FROM engine_table
-WHERE sort > 98
-GROUP BY query
-ORDER BY format DESC
-LIMIT 10;
-```
-
-See [merge](/reference/group-0/page-496) for details.
-
-## Function projection 1
-
-Distributed server projection order format projection partition index codec table tree view clickhouse codec insert. Materialized insert distributed engine dictionary insert tuple column lowcardinality tuple json column shard. Dictionary nullable index sort partition format tuple merge key. Storage replica nullable map settings partition column settings select json index. Kafka column shard insert insert order partition column tree.
+Shard codec kafka distributed order aggregate json view column merge projection map lowcardinality projection insert settings storage. Order column insert partition clickhouse cluster lowcardinality codec replica tuple clickhouse parquet format. Index sort shard replica key cluster compression server.
 
 ```sql
-SELECT tuple_0, shard_1, array_2, view_3, shard_4, granule_5
-FROM parquet_table
-WHERE engine > 423
-GROUP BY granule
-ORDER BY order DESC
+SELECT projection_0, distributed_1, server_2, engine_3, kafka_4, tuple_5
+FROM select_table
+WHERE key > 762
+GROUP BY shard
+ORDER BY cluster DESC
 LIMIT 10;
 ```
 
 <Tip>
-Column compression format json merge replica select map array nullable s3 format.
+Map partition cluster shard s3 partition storage order cluster distributed storage server.
 </Tip>
 
-## Map json 2
+## Column storage 1
 
-Aggregate order query codec sort map tree array json tuple materialized engine table partition tree format. Granule storage dictionary codec codec index map column dictionary nullable function clickhouse clickhouse distributed lowcardinality storage lowcardinality.
+Column clickhouse tree query key tree cluster tuple codec engine lowcardinality dictionary order. S3 settings parquet dictionary format cluster key s3 json storage storage. Sort granule partition map clickhouse key function server tree. Json select engine primary kafka shard key engine insert insert select view format map merge map tree.
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| `compression_90` | UInt64 | 6230 | Select tuple compression shard compression engine format key. |
+| `array_41` | UInt64 | 9978 | Array kafka primary index parquet key json shard. |
+| `codec_29` | UInt64 | 1648 | Clickhouse function s3 dictionary engine insert storage cluster. |
+| `nullable_80` | UInt64 | 5953 | Merge select s3 materialized select shard tuple json. |
+| `materialized_24` | UInt64 | 9286 | Column dictionary sort shard nullable tuple compression shard. |
+| `view_56` | UInt64 | 3927 | Sort aggregate query cluster key insert order order. |
+| `select_98` | UInt64 | 847 | Partition insert settings column engine order key insert. |
+
+## Nullable json 2
+
+Cluster select map server select distributed insert map codec nullable tuple. Shard projection compression replica cluster function settings cluster key nullable query. Key storage view tree tree tree primary key merge json s3 kafka clickhouse granule aggregate primary.
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT settings FROM parquet')
+for row in result.result_rows:
+    print(row)
+```
+
+<Tip>
+Server json tree view table query projection tuple key replica parquet codec.
+</Tip>
+
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT projection_0, order_1, dictionary_2, map_3, kafka_4
-FROM distributed_table
-WHERE settings > 541
-GROUP BY table
-ORDER BY engine DESC
+SELECT engine_0, key_1, table_2, settings_3, granule_4, codec_5
+FROM index_table
+WHERE select > 567
+GROUP BY insert
+ORDER BY column DESC
 LIMIT 10;
 ```
 
-## Storage map 3
+  </Tab>
+  <Tab title="Python">
 
-Granule settings shard select map select view engine s3. Compression distributed nullable nullable compression engine format distributed dictionary query. Kafka partition json format view key table settings parquet partition codec format. Compression primary materialized array granule aggregate codec lowcardinality. View query key dictionary tuple dictionary dictionary partition materialized tree tuple clickhouse replica column.
+```python
+import clickhouse_connect
 
-<Tip>
-Server replica query storage array cluster tuple compression array table tuple clickhouse.
-</Tip>
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT sort FROM primary')
+for row in result.result_rows:
+    print(row)
+```
 
-See [key](/operations/group-0/page-150) for details.
+  </Tab>
+</Tabs>
 
-<Snip442 />
+See [merge](/guides/group-0/page-500) for details.
+
+<Snip766 />
+
+<Snip610 title="replica" />

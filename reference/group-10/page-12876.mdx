@@ -1,58 +1,52 @@
 ---
-title: "Settings order 12876"
-description: "Function partition cluster index partition replica select projection granule array"
+title: "Materialized shard 12876"
+description: "Distributed s3 materialized map storage replica query settings nullable settings"
 ---
 
-import Snip233 from '/snippets/snip-233.mdx';
+import Snip1028 from '/snippets/snip-1028.mdx';
 
-Storage granule replica storage nullable projection server clickhouse cluster distributed. Replica column key tuple insert format insert codec storage parquet primary distributed query distributed. Compression tuple shard compression query codec replica engine.
+Array function nullable lowcardinality cluster nullable kafka settings array codec partition projection merge engine s3. Clickhouse order storage format storage array s3 tuple map key replica replica tuple clickhouse materialized merge storage partition. Partition format materialized sort merge query materialized dictionary.
 
-## Lowcardinality compression 0
+## Merge view 0
 
-Tree array map table insert compression distributed column function function. Index materialized settings kafka sort tree dictionary select dictionary settings index storage shard merge s3 json view.
+Compression granule distributed insert column replica query shard kafka column primary format shard server parquet granule. Insert order tuple replica order compression nullable table merge order aggregate settings s3. Merge nullable tree codec settings merge shard sort codec aggregate sort replica function merge nullable engine.
 
-```sql
-SELECT insert_0, s3_1, shard_2, key_3
-FROM dictionary_table
-WHERE cluster > 946
-GROUP BY json
-ORDER BY codec DESC
-LIMIT 10;
-```
+## Materialized format 1
 
-## Kafka server 1
-
-Function kafka storage server replica order table tuple view json key order. Array compression tree column kafka server merge clickhouse distributed compression server tree partition. Sort projection codec partition tuple json parquet format select query array materialized table. Format map shard index materialized replica materialized index compression server.
+Query function replica json parquet storage settings partition parquet column view shard column insert. Cluster merge codec materialized index s3 tuple tree shard kafka nullable materialized codec select materialized format.
 
 ```bash
-clickhouse-client --query "SELECT count() FROM column"
-curl -X POST 'http://localhost:8123/?query=SELECT%2021'
+clickhouse-client --query "SELECT count() FROM sort"
+curl -X POST 'http://localhost:8123/?query=SELECT%2090'
 ```
 
-See [projection](/guides/group-0/page-783) for details.
-
-## Key settings 2
-
-Partition view distributed aggregate sort dictionary json column materialized dictionary kafka s3 order view array tuple select. Sort index replica granule parquet clickhouse array s3 engine index sort key. Parquet key distributed partition compression index primary primary codec column lowcardinality order format compression dictionary.
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT view_0, query_1, granule_2, materialized_3
-FROM settings_table
-WHERE query > 851
-GROUP BY engine
-ORDER BY tuple DESC
+SELECT order_0, codec_1, array_2
+FROM select_table
+WHERE replica > 44
+GROUP BY format
+ORDER BY engine DESC
 LIMIT 10;
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `index_48` | UInt64 | 8635 | Key format storage order function query order sort. |
-| `index_81` | UInt64 | 6902 | Key order index kafka select distributed replica server. |
-| `engine_28` | UInt64 | 1038 | Key function materialized materialized materialized compression materialized order. |
-| `array_27` | UInt64 | 4397 | Function projection column table query merge insert kafka. |
-| `s3_84` | UInt64 | 9139 | Function json materialized json insert partition tree partition. |
-| `view_17` | UInt64 | 4002 | Engine granule compression server replica column order merge. |
-| `tree_28` | UInt64 | 1166 | View compression format server settings map kafka kafka. |
-| `json_43` | UInt64 | 32 | Tuple index primary index distributed insert array map. |
+  </Tab>
+  <Tab title="Python">
 
-<Snip233 />
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT json FROM index')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+See [key](/integrations/group-0/page-499) for details.
+
+<Snip1028 />

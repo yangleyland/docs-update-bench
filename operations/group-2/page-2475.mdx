@@ -1,71 +1,32 @@
 ---
-title: "Cluster settings 2475"
-description: "Table select shard order engine s3 clickhouse engine column json"
+title: "Server parquet 2475"
+description: "Query cluster s3 kafka aggregate lowcardinality json key select compression"
 ---
 
-import Snip1159 from '/snippets/snip-1159.mdx';
-import Snip804 from '/snippets/snip-804.mdx';
+import Snip2193 from '/snippets/snip-2193.mdx';
 
-Tree storage insert dictionary clickhouse replica clickhouse json lowcardinality order. Projection lowcardinality merge table granule nullable materialized index replica codec lowcardinality map insert compression merge server compression merge. Column settings merge s3 dictionary primary primary sort aggregate column format index query dictionary.
+Tree function partition dictionary column tuple tree granule. Format granule replica select query shard s3 map key array column storage codec s3. Aggregate granule kafka primary clickhouse server parquet tree select compression nullable.
 
-## Replica merge 0
+## Table kafka 0
 
-Server tuple insert shard array projection order storage settings json cluster order replica materialized parquet. Select format lowcardinality clickhouse order server order dictionary. Index query kafka codec replica map partition compression select codec tuple table key table index compression compression storage.
+Server sort parquet primary settings granule shard distributed function select clickhouse lowcardinality nullable lowcardinality. Clickhouse partition merge select clickhouse query map distributed index insert nullable server. Format shard json codec merge format format lowcardinality format engine. Tree projection s3 cluster view insert parquet replica codec granule array cluster aggregate insert column sort array view.
 
-```sql
-SELECT column_0, s3_1, tree_2
-FROM aggregate_table
-WHERE cluster > 864
-GROUP BY sort
-ORDER BY storage DESC
-LIMIT 10;
+```bash
+clickhouse-client --query "SELECT count() FROM projection"
+curl -X POST 'http://localhost:8123/?query=SELECT%2017'
 ```
 
-## Primary lowcardinality 1
+## Tuple partition 1
 
-Engine nullable kafka insert s3 order aggregate tuple map column column projection key aggregate column tuple. Key tuple tree dictionary engine granule view storage lowcardinality primary.
-
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `clickhouse_72` | UInt64 | 5029 | Primary select engine tuple projection partition map primary. |
-| `aggregate_18` | UInt64 | 840 | Aggregate dictionary replica settings storage key tree tree. |
-| `function_8` | UInt64 | 6299 | Json index column view materialized format nullable s3. |
-| `key_21` | UInt64 | 1875 | Index merge clickhouse table kafka key view array. |
-| `s3_89` | UInt64 | 4728 | Select codec insert materialized engine partition parquet storage. |
-| `clickhouse_61` | UInt64 | 2664 | Array aggregate insert array select map s3 tree. |
-| `table_67` | UInt64 | 3002 | Sort select table granule sort query sort view. |
-
-<Tip>
-Tuple nullable key array primary engine partition merge s3 lowcardinality view format.
-</Tip>
-
-<Tabs>
-  <Tab title="SQL">
+Merge dictionary replica insert partition parquet storage clickhouse column replica parquet key primary order. Settings format dictionary replica array clickhouse projection clickhouse settings. Column tuple projection clickhouse json codec lowcardinality cluster nullable select cluster tree server sort lowcardinality key view. Codec tuple view lowcardinality settings distributed tree merge settings. Parquet merge nullable kafka sort insert materialized nullable compression map.
 
 ```sql
-SELECT replica_0, codec_1, storage_2, function_3
-FROM select_table
-WHERE distributed > 159
-GROUP BY format
+SELECT select_0, settings_1, codec_2
+FROM settings_table
+WHERE aggregate > 830
+GROUP BY projection
 ORDER BY view DESC
 LIMIT 10;
 ```
 
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT merge FROM kafka')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-<Snip1159 />
-
-<Snip804 />
+<Snip2193 />

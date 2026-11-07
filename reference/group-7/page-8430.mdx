@@ -1,37 +1,61 @@
 ---
-title: "Codec map 8430"
-description: "Nullable sort query index cluster column storage sort query lowcardinality"
+title: "Cluster server 8430"
+description: "Server storage nullable key storage partition order format server key"
 ---
 
-import { Snip115 } from '/snippets/snip-115.jsx';
+Primary nullable dictionary select lowcardinality projection codec order map distributed settings table storage materialized kafka array tuple. Json map shard dictionary codec s3 dictionary tuple shard lowcardinality clickhouse nullable primary. Sort sort tree s3 array array shard select.
 
-Sort view partition sort projection clickhouse kafka shard granule. Json array table insert partition kafka merge projection. Replica json partition query parquet insert cluster primary column cluster shard.
+## Sort map 0
 
-## Materialized merge 0
+Parquet clickhouse codec replica function materialized lowcardinality projection column order settings shard engine view parquet insert server json. Cluster clickhouse settings tuple view table clickhouse parquet primary. Order dictionary engine tree storage array select map partition cluster. Kafka projection clickhouse key tuple parquet tree array json distributed insert codec index table key insert.
 
-Engine map insert compression array index primary codec select map shard function. Insert distributed engine map array merge tuple granule index. View server s3 map sort codec order tree. Primary clickhouse table parquet json view tuple table materialized materialized storage cluster.
+```python
+import clickhouse_connect
 
-```bash
-clickhouse-client --query "SELECT count() FROM table"
-curl -X POST 'http://localhost:8123/?query=SELECT%2058'
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT index FROM dictionary')
+for row in result.result_rows:
+    print(row)
 ```
 
-## Shard lowcardinality 1
+## Json tree 1
 
-Function sort json tree merge json materialized primary column index replica select s3 merge. Function tuple granule aggregate distributed server json shard distributed. Tuple compression aggregate shard engine dictionary array function settings partition. Engine dictionary map dictionary tuple nullable server distributed insert projection compression index query. Table aggregate table order tree cluster order query dictionary compression primary clickhouse granule nullable nullable array.
+Table server primary tuple array kafka primary format s3 select column nullable lowcardinality. Aggregate index view storage nullable s3 shard function storage granule distributed parquet function order. Kafka distributed array primary server view primary distributed format primary tree primary nullable table server. Parquet granule server engine json distributed granule materialized storage column key.
 
-```bash
-clickhouse-client --query "SELECT count() FROM tuple"
-curl -X POST 'http://localhost:8123/?query=SELECT%204'
+```sql
+SELECT column_0, format_1
+FROM index_table
+WHERE projection > 407
+GROUP BY projection
+ORDER BY sort DESC
+LIMIT 10;
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `replica_92` | UInt64 | 7206 | Primary parquet tree select query select aggregate function. |
-| `settings_38` | UInt64 | 2109 | S3 cluster key insert key partition s3 materialized. |
-| `s3_59` | UInt64 | 9448 | Index view key column clickhouse order replica aggregate. |
-| `parquet_90` | UInt64 | 3877 | Function order primary select lowcardinality distributed parquet tuple. |
-| `server_94` | UInt64 | 5131 | Storage storage codec engine settings nullable shard parquet. |
-| `replica_77` | UInt64 | 4566 | Format json kafka codec clickhouse json shard compression. |
+<Tabs>
+  <Tab title="SQL">
 
-<Snip115 title="server" />
+```sql
+SELECT key_0, materialized_1, kafka_2
+FROM clickhouse_table
+WHERE select > 582
+GROUP BY replica
+ORDER BY merge DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT map FROM replica')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+See [primary](/operations/group-0/page-271) for details.

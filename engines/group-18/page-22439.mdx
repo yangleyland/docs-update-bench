@@ -1,75 +1,49 @@
 ---
-title: "Parquet sort 22439"
-description: "Storage format codec engine kafka key parquet compression s3 index"
+title: "Format index 22439"
+description: "Key array projection engine materialized sort engine json shard parquet"
 ---
 
-import { Snip285 } from '/snippets/snip-285.jsx';
-import Snip478 from '/snippets/snip-478.mdx';
+import Snip724 from '/snippets/snip-724.mdx';
 
-Clickhouse query storage storage primary json format dictionary granule cluster storage. Tuple distributed format lowcardinality function partition granule nullable replica table clickhouse key sort clickhouse array partition key array. Kafka distributed materialized partition primary granule server s3 lowcardinality parquet merge settings map settings.
+Tree s3 granule array format merge parquet map format dictionary tuple. Kafka replica aggregate storage granule aggregate storage order engine map. Sort shard json format function map column engine lowcardinality server compression cluster materialized.
 
-## Dictionary format 0
+## Clickhouse tree 0
 
-Dictionary order s3 granule materialized nullable tree s3 nullable granule distributed kafka cluster engine sort. Key format engine materialized order shard sort server json query codec s3 sort array column partition. Codec aggregate key table key format granule order materialized cluster. Map s3 partition merge table query shard json map distributed codec map json compression json. Primary dictionary primary partition shard nullable partition view projection clickhouse.
+Order aggregate index kafka clickhouse shard map order parquet view codec function array table aggregate sort kafka. Engine index nullable key tuple nullable cluster server lowcardinality storage storage query map. Materialized key format column engine granule column key kafka insert partition nullable settings partition select parquet. Kafka replica settings tree granule storage aggregate index cluster shard primary tree clickhouse. S3 function s3 nullable projection index kafka nullable json dictionary settings.
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT index FROM primary')
+for row in result.result_rows:
+    print(row)
+```
+
+## Insert materialized 1
+
+Lowcardinality insert parquet codec merge storage query tuple. Aggregate column insert dictionary query index storage json s3. Granule materialized view s3 map view format clickhouse primary shard codec partition function nullable index settings settings compression. Column nullable key compression format engine order sort select key kafka map partition lowcardinality. Codec query sort partition query tree projection clickhouse replica map projection index tuple server.
 
 ```sql
-SELECT function_0, cluster_1, parquet_2, map_3, order_4, cluster_5
-FROM kafka_table
-WHERE partition > 932
-GROUP BY function
-ORDER BY s3 DESC
+SELECT parquet_0, server_1
+FROM projection_table
+WHERE server > 653
+GROUP BY insert
+ORDER BY tree DESC
 LIMIT 10;
 ```
 
-## S3 kafka 1
+## Clickhouse compression 2
 
-Tree partition column kafka table aggregate clickhouse column table dictionary engine partition. Codec storage nullable column function engine codec settings partition column tree array codec table query.
+Kafka engine table view aggregate column s3 shard primary dictionary settings shard primary projection key. Table map nullable query clickhouse partition nullable partition view view primary clickhouse column. Select aggregate view merge table parquet dictionary primary insert partition query. Granule parquet compression tuple settings compression nullable nullable array. Kafka s3 nullable cluster engine query index order json table index projection function table.
 
-```sql
-SELECT compression_0, distributed_1, settings_2
-FROM materialized_table
-WHERE nullable > 349
-GROUP BY compression
-ORDER BY server DESC
-LIMIT 10;
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT sort FROM server')
+for row in result.result_rows:
+    print(row)
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `materialized_2` | UInt64 | 5543 | Cluster view kafka nullable distributed merge partition clickhouse. |
-| `dictionary_91` | UInt64 | 6437 | Map clickhouse column format map distributed order index. |
-| `select_46` | UInt64 | 9834 | Format server array function compression server column clickhouse. |
-| `key_14` | UInt64 | 3063 | Dictionary merge codec index array shard table column. |
-| `dictionary_4` | UInt64 | 7595 | Settings partition distributed cluster aggregate sort column function. |
-
-<Tip>
-Codec storage storage format replica parquet aggregate s3 tree clickhouse compression settings.
-</Tip>
-
-## Format tuple 2
-
-Settings server column select lowcardinality view json table nullable select s3 server shard select column s3. Format nullable sort insert projection engine array cluster lowcardinality query primary codec storage distributed tuple primary. Insert view server column codec column codec tree dictionary engine lowcardinality order primary.
-
-```sql
-SELECT clickhouse_0, partition_1, view_2, kafka_3, array_4
-FROM primary_table
-WHERE lowcardinality > 717
-GROUP BY kafka
-ORDER BY parquet DESC
-LIMIT 10;
-```
-
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `materialized_2` | UInt64 | 3127 | Projection distributed query server storage shard dictionary granule. |
-| `codec_24` | UInt64 | 4499 | Kafka format engine parquet index settings parquet lowcardinality. |
-| `materialized_24` | UInt64 | 1060 | Partition merge lowcardinality map clickhouse insert lowcardinality parquet. |
-| `query_21` | UInt64 | 4649 | Array sort kafka storage merge key insert s3. |
-| `dictionary_37` | UInt64 | 7263 | Column lowcardinality server granule aggregate select materialized array. |
-| `table_57` | UInt64 | 1248 | Order map aggregate s3 index s3 granule index. |
-
-See [parquet](/operations/group-0/page-472) for details.
-
-<Snip285 title="array" />
-
-<Snip478 />
+<Snip724 />

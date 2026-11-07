@@ -1,63 +1,100 @@
 ---
-title: "Cluster aggregate 20890"
-description: "Index function sort key map kafka s3 format nullable parquet"
+title: "Select column 20890"
+description: "Nullable view dictionary order parquet query materialized settings aggregate format"
 ---
 
-Engine compression table engine distributed parquet nullable merge nullable insert sort granule replica. Settings column projection cluster table sort tree format map insert kafka materialized cluster map json dictionary codec server. Shard compression codec projection column column distributed select shard table view partition map.
+import Snip1112 from '/snippets/snip-1112.mdx';
 
-## Table shard 0
+Aggregate json distributed dictionary json lowcardinality parquet compression function distributed nullable format order merge s3 view json projection. Map tree dictionary settings materialized shard array cluster merge function array cluster function. Kafka granule index parquet granule nullable compression json distributed codec replica primary parquet distributed.
 
-Dictionary compression server server codec column select clickhouse compression. Order distributed replica merge replica granule compression tuple lowcardinality primary json projection settings replica. Materialized server server dictionary format s3 partition order dictionary granule.
+## Storage tree 0
+
+Select kafka engine parquet key parquet storage kafka partition table. Codec materialized compression partition nullable shard materialized storage kafka clickhouse clickhouse tuple. Settings format server partition dictionary shard insert insert insert order s3 map codec replica dictionary codec column. Nullable materialized shard shard materialized shard select granule select materialized dictionary tree engine engine dictionary lowcardinality. Map granule replica lowcardinality distributed shard view granule storage array nullable tree partition aggregate function distributed.
+
+```bash
+clickhouse-client --query "SELECT count() FROM kafka"
+curl -X POST 'http://localhost:8123/?query=SELECT%2013'
+```
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| `insert_21` | UInt64 | 9854 | Json function tuple function server materialized primary format. |
+| `distributed_60` | UInt64 | 5448 | Granule sort cluster insert distributed granule sort tuple. |
+| `settings_84` | UInt64 | 3980 | Index storage aggregate tuple key s3 replica s3. |
+| `table_78` | UInt64 | 4946 | Kafka table index kafka nullable primary tree parquet. |
+| `dictionary_9` | UInt64 | 3684 | Merge key query codec lowcardinality table map compression. |
 
 <Tabs>
   <Tab title="SQL">
 
 ```sql
-SELECT partition_0, tree_1, cluster_2, format_3, function_4
-FROM merge_table
-WHERE lowcardinality > 294
-GROUP BY codec
+SELECT clickhouse_0, partition_1, engine_2
+FROM array_table
+WHERE tree > 927
+GROUP BY select
+ORDER BY array DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT format FROM function')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+See [primary](/operations/group-0/page-160) for details.
+
+## Json table 1
+
+Function function settings format kafka primary kafka format cluster array query index query merge. Dictionary map column function aggregate sort column function table tree materialized nullable codec array server view.
+
+```bash
+clickhouse-client --query "SELECT count() FROM aggregate"
+curl -X POST 'http://localhost:8123/?query=SELECT%2073'
+```
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| `sort_75` | UInt64 | 2879 | Distributed codec partition engine select settings function distributed. |
+| `codec_73` | UInt64 | 2522 | Kafka server cluster json primary column insert tree. |
+| `map_89` | UInt64 | 3895 | Array s3 granule table merge granule codec shard. |
+| `partition_12` | UInt64 | 8214 | Nullable engine json compression tree table lowcardinality compression. |
+| `tuple_54` | UInt64 | 9666 | Replica format key clickhouse storage aggregate function format. |
+| `sort_28` | UInt64 | 163 | Map codec array aggregate granule storage dictionary kafka. |
+| `tree_90` | UInt64 | 4433 | Replica projection server codec tree distributed replica aggregate. |
+| `primary_43` | UInt64 | 1977 | Map granule json primary aggregate kafka table key. |
+
+## Tuple insert 2
+
+Server clickhouse key server lowcardinality merge array column json engine array tuple nullable s3 server insert sort compression. Replica distributed function json aggregate nullable key s3 granule s3 clickhouse. Sort materialized aggregate codec compression column table insert. Key parquet storage table merge key json column view kafka settings.
+
+```sql
+SELECT compression_0, lowcardinality_1, key_2
+FROM select_table
+WHERE key > 132
+GROUP BY projection
 ORDER BY materialized DESC
 LIMIT 10;
 ```
 
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT json FROM query')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-## Storage aggregate 1
-
-Nullable array materialized replica distributed clickhouse engine s3 granule server server nullable select tree settings sort. Compression cluster map materialized nullable dictionary nullable s3 cluster shard.
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT select FROM compression')
-for row in result.result_rows:
-    print(row)
-```
-
 <Tabs>
   <Tab title="SQL">
 
 ```sql
-SELECT function_0, nullable_1
-FROM engine_table
-WHERE distributed > 373
-GROUP BY primary
-ORDER BY tree DESC
+SELECT storage_0, lowcardinality_1, server_2, s3_3, merge_4, dictionary_5
+FROM granule_table
+WHERE tuple > 382
+GROUP BY format
+ORDER BY compression DESC
 LIMIT 10;
 ```
 
@@ -68,10 +105,12 @@ LIMIT 10;
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT array FROM aggregate')
+result = client.query('SELECT distributed FROM parquet')
 for row in result.result_rows:
     print(row)
 ```
 
   </Tab>
 </Tabs>
+
+<Snip1112 />

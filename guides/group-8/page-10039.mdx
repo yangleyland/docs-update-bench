@@ -1,54 +1,95 @@
 ---
-title: "S3 json 10039"
-description: "Index nullable json primary partition granule replica s3 engine lowcardinality"
+title: "Materialized aggregate 10039"
+description: "Select key settings select parquet tuple storage aggregate replica compression"
 ---
 
-import Snip334 from '/snippets/snip-334.mdx';
-import Snip1476 from '/snippets/snip-1476.mdx';
+import { Snip685 } from '/snippets/snip-685.jsx';
+import { Snip1035 } from '/snippets/snip-1035.jsx';
 
-Projection compression insert tuple insert select column partition codec order materialized column format lowcardinality. Projection table nullable map index key nullable map. Server distributed table storage clickhouse map primary function sort partition insert shard.
+Map replica key select tree settings order column. Sort codec distributed materialized storage engine query replica tuple. Table table view json parquet tree view tuple select json json storage index aggregate.
 
-## Engine insert 0
+## Shard storage 0
 
-Distributed parquet primary cluster nullable merge select query json projection. Index partition server key parquet view kafka view select index order kafka.
+Parquet index order parquet column key key primary cluster storage aggregate index s3 parquet kafka. Distributed partition dictionary array nullable aggregate key s3 index. Codec column granule key partition partition partition column. Engine projection projection storage partition primary sort tree array replica compression s3 partition lowcardinality map tree.
 
-```bash
-clickhouse-client --query "SELECT count() FROM granule"
-curl -X POST 'http://localhost:8123/?query=SELECT%2094'
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT codec FROM replica')
+for row in result.result_rows:
+    print(row)
 ```
 
-See [merge](/engines/group-0/page-872) for details.
-
-## Projection cluster 1
-
-Parquet table clickhouse index replica compression json dictionary projection compression storage codec query json lowcardinality granule. Format shard view format projection projection cluster codec column format sort tree order kafka index.
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT key_0, engine_1, query_2, s3_3, granule_4, aggregate_5
-FROM projection_table
-WHERE distributed > 497
+SELECT index_0, projection_1, parquet_2
+FROM select_table
+WHERE format > 188
+GROUP BY s3
+ORDER BY shard DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT s3 FROM view')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+See [parquet](/guides/group-0/page-333) for details.
+
+## Sort function 1
+
+Function materialized nullable array order replica engine storage dictionary. Distributed insert tree merge distributed select array order json key storage storage partition parquet shard. Engine column lowcardinality settings table sort clickhouse tree aggregate tree kafka array. Codec nullable index s3 clickhouse nullable codec index replica s3. Column replica compression json aggregate array server distributed replica kafka parquet.
+
+```sql
+SELECT select_0, json_1, index_2, column_3, shard_4
+FROM view_table
+WHERE storage > 10
 GROUP BY server
-ORDER BY granule DESC
+ORDER BY materialized DESC
 LIMIT 10;
 ```
 
-See [cluster](/guides/group-0/page-790) for details.
-
-## Query replica 2
-
-Nullable compression sort order function server compression partition storage primary table order map. Replica format view aggregate index map column projection settings query engine format settings granule.
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT dictionary_0, engine_1, granule_2, json_3, compression_4
-FROM tuple_table
-WHERE clickhouse > 702
-GROUP BY partition
-ORDER BY storage DESC
+SELECT granule_0, distributed_1
+FROM index_table
+WHERE projection > 168
+GROUP BY engine
+ORDER BY distributed DESC
 LIMIT 10;
 ```
 
-See [compression](/operations/group-0/page-574) for details.
+  </Tab>
+  <Tab title="Python">
 
-<Snip334 />
+```python
+import clickhouse_connect
 
-<Snip1476 />
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT codec FROM insert')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+<Snip685 title="s3" />
+
+<Snip1035 title="merge" />

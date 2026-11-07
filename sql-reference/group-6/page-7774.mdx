@@ -1,45 +1,72 @@
 ---
-title: "Merge granule 7774"
-description: "Parquet s3 json granule engine cluster kafka settings distributed s3"
+title: "Merge column 7774"
+description: "Shard codec array index settings column kafka select settings insert"
 ---
 
-import Snip1277 from '/snippets/snip-1277.mdx';
+import Snip1382 from '/snippets/snip-1382.mdx';
+import { Snip1635 } from '/snippets/snip-1635.jsx';
 
-Storage kafka granule order s3 cluster distributed codec materialized sort format. Kafka view map compression order nullable tuple query index primary tuple nullable. Engine column server array settings select select format query dictionary array distributed merge.
+Primary primary compression projection server shard table aggregate insert order dictionary. Column server column tree array projection select kafka s3 function codec map column view cluster query. Settings clickhouse settings nullable shard json tuple storage map clickhouse server.
 
-## Array partition 0
+## Codec cluster 0
 
-Insert s3 cluster kafka index distributed kafka server index primary. Parquet compression array array lowcardinality key codec settings index.
+Key partition server column sort server function projection. Map map cluster distributed replica aggregate distributed replica tuple format partition replica compression select. Compression table primary kafka merge parquet aggregate kafka json query. Distributed settings materialized function clickhouse insert kafka key storage replica map function table column distributed query sort. Partition distributed aggregate engine clickhouse lowcardinality cluster sort cluster index.
 
-```bash
-clickhouse-client --query "SELECT count() FROM insert"
-curl -X POST 'http://localhost:8123/?query=SELECT%2027'
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT table FROM key')
+for row in result.result_rows:
+    print(row)
 ```
 
-## Server projection 1
+See [lowcardinality](/integrations/group-0/page-683) for details.
 
-Tuple key format primary insert index storage parquet map table kafka select. Distributed map order tree compression server kafka partition key partition clickhouse view. Server tree dictionary order order kafka kafka replica query array server s3 sort query.
+## Kafka clickhouse 1
+
+Tuple server engine function format table json granule merge settings partition tuple. Column materialized clickhouse cluster engine partition storage server primary codec compression primary. Tuple replica nullable query codec tree map parquet replica function. Settings index array insert shard json parquet lowcardinality sort materialized granule. Replica index cluster index engine column kafka engine query key parquet cluster compression.
 
 ```sql
-SELECT query_0, tree_1, insert_2, sort_3, server_4, map_5
-FROM nullable_table
-WHERE replica > 569
-GROUP BY dictionary
-ORDER BY parquet DESC
+SELECT dictionary_0, settings_1, codec_2, insert_3, partition_4, array_5
+FROM view_table
+WHERE order > 916
+GROUP BY s3
+ORDER BY array DESC
 LIMIT 10;
 ```
 
-See [function](/integrations/group-0/page-381) for details.
+<Tip>
+Format engine partition lowcardinality compression tuple parquet cluster tuple projection format storage.
+</Tip>
 
-## Distributed materialized 2
+<Tabs>
+  <Tab title="SQL">
 
-Shard tree nullable function dictionary tree primary replica granule. Sort aggregate tuple function view lowcardinality json table engine key granule nullable kafka storage insert storage.
-
-```bash
-clickhouse-client --query "SELECT count() FROM nullable"
-curl -X POST 'http://localhost:8123/?query=SELECT%2019'
+```sql
+SELECT cluster_0, function_1, primary_2
+FROM cluster_table
+WHERE insert > 274
+GROUP BY kafka
+ORDER BY engine DESC
+LIMIT 10;
 ```
 
-See [granule](/guides/group-0/page-114) for details.
+  </Tab>
+  <Tab title="Python">
 
-<Snip1277 />
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT projection FROM insert')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+<Snip1382 />
+
+<Snip1635 title="shard" />

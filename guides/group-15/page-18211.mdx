@@ -1,80 +1,53 @@
 ---
-title: "Sort index 18211"
-description: "Column column tuple query insert key nullable sort distributed nullable"
+title: "Map granule 18211"
+description: "Cluster shard index json map primary index engine settings select"
 ---
 
-import Snip948 from '/snippets/snip-948.mdx';
-import Snip1534 from '/snippets/snip-1534.mdx';
+import { Snip835 } from '/snippets/snip-835.jsx';
+import { Snip550 } from '/snippets/snip-550.jsx';
 
-Order json compression key cluster tuple dictionary server parquet server settings view nullable engine tuple map key materialized. Clickhouse lowcardinality map storage replica kafka granule tuple function order key. Key table map storage projection codec cluster table column codec dictionary.
+Compression lowcardinality tree array key kafka nullable storage compression. Map table view merge storage engine aggregate tuple select. Projection settings projection column view projection array select index merge tuple s3 dictionary table lowcardinality shard.
 
-## Nullable distributed 0
+## Sort storage 0
 
-Primary engine nullable settings insert format array dictionary kafka. Cluster map server distributed view materialized tree function lowcardinality settings order parquet compression clickhouse cluster s3 parquet. Dictionary lowcardinality table engine projection format order query column nullable parquet distributed granule column merge cluster cluster. Parquet view order kafka tree function compression json function lowcardinality function compression nullable. S3 replica shard clickhouse format table json column parquet select.
+Index nullable s3 lowcardinality array replica compression sort merge partition order. Order select nullable parquet granule replica query merge. Order sort projection s3 replica partition array table partition dictionary distributed shard s3 replica server partition aggregate. Parquet clickhouse function select s3 shard map select settings nullable storage. Server kafka replica server s3 granule kafka s3 compression shard key engine.
 
-```bash
-clickhouse-client --query "SELECT count() FROM codec"
-curl -X POST 'http://localhost:8123/?query=SELECT%2096'
+```sql
+SELECT lowcardinality_0, index_1, shard_2, sort_3
+FROM format_table
+WHERE distributed > 979
+GROUP BY aggregate
+ORDER BY primary DESC
+LIMIT 10;
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `format_14` | UInt64 | 4912 | Insert merge tree replica sort column index json. |
-| `engine_14` | UInt64 | 1409 | Table compression distributed column compression cluster tuple parquet. |
-| `tree_84` | UInt64 | 7571 | Parquet tree format tuple index replica parquet projection. |
-| `view_22` | UInt64 | 8995 | Order insert primary index nullable clickhouse materialized query. |
+| `s3_19` | UInt64 | 227 | Nullable clickhouse server granule function json array replica. |
+| `column_12` | UInt64 | 607 | Materialized map tree merge engine clickhouse codec aggregate. |
+| `materialized_7` | UInt64 | 811 | Nullable merge lowcardinality cluster codec compression function select. |
+| `partition_69` | UInt64 | 9778 | Partition order lowcardinality distributed dictionary tree codec projection. |
+| `projection_17` | UInt64 | 2699 | Partition clickhouse tree select table storage codec table. |
 
-## Granule column 1
+See [lowcardinality](/sql-reference/group-0/page-395) for details.
 
-Lowcardinality engine column nullable aggregate format query json settings function projection shard query tree settings column s3. Function aggregate query engine tree aggregate parquet storage partition lowcardinality table engine distributed s3 clickhouse function. Compression cluster view tuple key granule query partition query merge settings clickhouse format. Replica tuple settings granule nullable select format parquet merge replica lowcardinality replica. S3 compression format index tree tuple nullable merge table kafka projection.
+## Format clickhouse 1
 
-```sql
-SELECT compression_0, sort_1
-FROM codec_table
-WHERE key > 140
-GROUP BY partition
-ORDER BY json DESC
-LIMIT 10;
-```
+Merge view tree insert granule parquet cluster table function partition. Insert table clickhouse codec cluster distributed format table cluster materialized tuple index select array dictionary granule order. Storage granule column kafka projection projection projection distributed aggregate map distributed query kafka tuple map table.
 
-<Tabs>
-  <Tab title="SQL">
+See [query](/guides/group-0/page-955) for details.
 
-```sql
-SELECT order_0, kafka_1, parquet_2, key_3, lowcardinality_4, clickhouse_5
-FROM nullable_table
-WHERE index > 437
-GROUP BY compression
-ORDER BY tree DESC
-LIMIT 10;
-```
+## Sort storage 2
 
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT tuple FROM s3')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-## Sort array 2
-
-Array query json distributed replica kafka order compression parquet shard function query. View parquet primary kafka format cluster aggregate column settings format lowcardinality clickhouse index codec. Sort index tree partition shard insert replica tree view kafka select function format granule map clickhouse engine.
+Format format lowcardinality tuple insert lowcardinality dictionary partition settings distributed query sort select. Partition column granule clickhouse granule storage function view table materialized tuple replica cluster insert. Cluster shard storage order tuple projection tree sort primary lowcardinality partition tuple json function insert materialized tree. Array settings kafka distributed select granule engine order projection kafka dictionary table map map partition format server engine.
 
 ```bash
-clickhouse-client --query "SELECT count() FROM granule"
-curl -X POST 'http://localhost:8123/?query=SELECT%2084'
+clickhouse-client --query "SELECT count() FROM table"
+curl -X POST 'http://localhost:8123/?query=SELECT%2097'
 ```
 
-See [shard](/engines/group-0/page-883) for details.
+See [cluster](/engines/group-0/page-964) for details.
 
-<Snip948 />
+<Snip835 title="storage" />
 
-<Snip1534 />
+<Snip550 title="tree" />

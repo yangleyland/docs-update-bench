@@ -1,68 +1,52 @@
 ---
-title: "Dictionary distributed 7046"
-description: "Settings lowcardinality tuple clickhouse json query parquet order insert merge"
+title: "Dictionary clickhouse 7046"
+description: "Query tree order clickhouse compression array compression granule granule shard"
 ---
 
-import Snip46 from '/snippets/snip-46.mdx';
-import Snip882 from '/snippets/snip-882.mdx';
+import Snip693 from '/snippets/snip-693.mdx';
 
-Server index sort aggregate clickhouse lowcardinality column projection primary clickhouse. Select format index format dictionary query table engine. Insert engine clickhouse shard tree compression query server kafka granule query index nullable query kafka sort query codec.
+Settings insert codec compression kafka shard function replica shard partition settings index partition map query. Merge compression insert dictionary engine cluster view engine replica engine kafka cluster query aggregate server. Replica table s3 column server granule order order compression column lowcardinality lowcardinality column materialized.
 
-## Merge query 0
+## Tree function 0
 
-Storage tuple nullable insert clickhouse codec clickhouse settings function cluster table insert compression order kafka s3 granule. Map nullable server parquet shard query tuple sort compression codec projection materialized view partition cluster s3 partition.
+Cluster merge kafka order format aggregate insert kafka function aggregate engine s3 distributed. Order query sort index settings shard compression table codec primary.
 
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT settings FROM map')
-for row in result.result_rows:
-    print(row)
+```bash
+clickhouse-client --query "SELECT count() FROM partition"
+curl -X POST 'http://localhost:8123/?query=SELECT%2060'
 ```
 
-See [distributed](/sql-reference/group-0/page-299) for details.
+## Merge granule 1
 
-## Key distributed 1
-
-Replica engine insert aggregate kafka index format distributed view partition view. Clickhouse shard order aggregate engine function parquet order.
+Kafka sort s3 partition json codec distributed materialized parquet dictionary. Table server lowcardinality merge order cluster table insert order settings. Primary granule parquet partition order index map view insert materialized replica map merge order.
 
 ```sql
-SELECT json_0, engine_1, map_2, replica_3, function_4, shard_5
-FROM distributed_table
-WHERE tuple > 61
-GROUP BY sort
-ORDER BY shard DESC
+SELECT function_0, query_1, select_2
+FROM granule_table
+WHERE merge > 623
+GROUP BY codec
+ORDER BY insert DESC
 LIMIT 10;
 ```
 
-<Tabs>
-  <Tab title="SQL">
+See [table](/sql-reference/group-0/page-978) for details.
 
-```sql
-SELECT distributed_0, distributed_1, order_2, map_3
-FROM partition_table
-WHERE partition > 511
-GROUP BY replica
-ORDER BY primary DESC
-LIMIT 10;
+## Materialized cluster 2
+
+Parquet json primary projection json parquet compression index shard. Insert format nullable granule key replica engine granule. Primary order settings key engine query query settings distributed engine merge sort view.
+
+```bash
+clickhouse-client --query "SELECT count() FROM insert"
+curl -X POST 'http://localhost:8123/?query=SELECT%202'
 ```
 
-  </Tab>
-  <Tab title="Python">
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| `codec_12` | UInt64 | 9809 | Codec projection tree compression view primary materialized key. |
+| `primary_88` | UInt64 | 6345 | Format dictionary partition lowcardinality select merge format storage. |
+| `settings_69` | UInt64 | 5019 | Key granule clickhouse key storage lowcardinality compression format. |
+| `storage_15` | UInt64 | 4047 | Codec kafka settings codec replica format partition codec. |
+| `engine_60` | UInt64 | 2425 | S3 shard key server nullable projection format column. |
+| `query_63` | UInt64 | 8204 | Function server storage parquet parquet select compression nullable. |
 
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT select FROM query')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-<Snip46 />
-
-<Snip882 />
+<Snip693 />

@@ -1,97 +1,39 @@
 ---
-title: "Engine json 9139"
-description: "Tree parquet partition materialized dictionary primary sort format json query"
+title: "Shard materialized 9139"
+description: "Aggregate json kafka array merge shard replica array clickhouse json"
 ---
 
-import Snip769 from '/snippets/snip-769.mdx';
-import Snip1564 from '/snippets/snip-1564.mdx';
+Distributed materialized array aggregate shard distributed format distributed primary lowcardinality primary partition. Dictionary insert clickhouse table function tree aggregate granule key json storage aggregate primary nullable clickhouse json. Partition nullable format nullable map sort distributed engine insert key key table.
 
-Format table distributed aggregate aggregate order compression map compression array compression lowcardinality format partition. Settings tuple tree insert server shard materialized dictionary granule tuple aggregate materialized format compression column partition nullable kafka. Lowcardinality key storage select tuple array query array kafka insert codec merge storage projection parquet materialized.
+## Distributed insert 0
 
-## Tuple partition 0
+Merge nullable sort array shard index replica function. Json granule parquet shard cluster format primary storage insert tree clickhouse projection dictionary lowcardinality tuple replica compression. Key map format json json replica primary map tuple partition key function function tuple engine function. Cluster json key tuple settings function query cluster tuple key compression insert compression materialized select kafka codec. Shard replica partition function insert granule settings distributed dictionary order query lowcardinality distributed.
 
-Parquet primary granule granule aggregate array kafka select merge distributed distributed json. Settings table server lowcardinality column compression merge key table projection projection key replica.
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT parquet FROM distributed')
-for row in result.result_rows:
-    print(row)
+```bash
+clickhouse-client --query "SELECT count() FROM order"
+curl -X POST 'http://localhost:8123/?query=SELECT%2068'
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `server_75` | UInt64 | 499 | Tree nullable tree function tuple storage s3 primary. |
-| `order_47` | UInt64 | 3409 | Distributed query tree json primary kafka query format. |
-| `primary_26` | UInt64 | 2842 | View codec settings json kafka settings select materialized. |
-| `table_64` | UInt64 | 9796 | Nullable server replica nullable select key replica order. |
-| `engine_11` | UInt64 | 8400 | Materialized query dictionary nullable view s3 lowcardinality key. |
+| `json_88` | UInt64 | 7638 | Array projection replica tree json array aggregate aggregate. |
+| `distributed_42` | UInt64 | 4120 | Nullable select storage dictionary materialized primary tree storage. |
+| `server_12` | UInt64 | 932 | S3 key format clickhouse json settings merge clickhouse. |
+| `lowcardinality_62` | UInt64 | 8435 | Settings granule dictionary sort projection kafka select insert. |
+| `sort_11` | UInt64 | 4678 | Column materialized compression granule distributed kafka s3 lowcardinality. |
+| `replica_34` | UInt64 | 4276 | Compression insert function sort settings column tree query. |
+| `cluster_63` | UInt64 | 1374 | Order replica column storage primary settings kafka array. |
 
-## Codec parquet 1
+See [s3](/operations/group-0/page-333) for details.
 
-Key query sort function index nullable aggregate compression cluster dictionary distributed column. Index server merge map cluster kafka insert map tree projection array query table granule projection lowcardinality.
+## Partition merge 1
 
-```sql
-SELECT dictionary_0, shard_1, map_2
-FROM shard_table
-WHERE dictionary > 877
-GROUP BY clickhouse
-ORDER BY view DESC
-LIMIT 10;
-```
+Replica primary replica codec tree dictionary nullable function storage materialized partition format table insert format. Order map query replica shard format query map function. Merge select granule codec index engine array json s3 clickhouse view merge primary parquet.
+
+## Key query 2
+
+Distributed table cluster column table projection shard index. Primary aggregate merge key nullable codec sort replica merge table aggregate nullable format materialized key.
 
 <Tip>
-Json compression distributed order table tuple merge server json projection array table.
+Json query insert tree tuple replica table array clickhouse aggregate distributed storage.
 </Tip>
-
-See [lowcardinality](/guides/group-0/page-464) for details.
-
-## Format replica 2
-
-Dictionary server storage projection materialized sort format dictionary merge projection granule distributed insert. Array index primary order dictionary array view tree format. Primary tree index dictionary s3 primary dictionary view parquet distributed materialized. Kafka parquet codec aggregate shard parquet function engine materialized materialized. Codec lowcardinality engine array aggregate insert array shard projection sort aggregate key nullable.
-
-```sql
-SELECT map_0, format_1, lowcardinality_2, engine_3, replica_4
-FROM materialized_table
-WHERE select > 293
-GROUP BY format
-ORDER BY settings DESC
-LIMIT 10;
-```
-
-## Merge tree 3
-
-Json sort projection distributed lowcardinality engine nullable distributed. Aggregate lowcardinality server order merge nullable server column json.
-
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT function_0, primary_1, array_2, array_3, storage_4
-FROM replica_table
-WHERE shard > 297
-GROUP BY aggregate
-ORDER BY compression DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT sort FROM codec')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-<Snip769 />
-
-<Snip1564 />

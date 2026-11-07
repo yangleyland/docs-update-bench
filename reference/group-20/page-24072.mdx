@@ -1,83 +1,57 @@
 ---
-title: "Json granule 24072"
-description: "Granule map format clickhouse server codec cluster nullable view materialized"
+title: "Settings compression 24072"
+description: "Table projection select nullable function codec select cluster replica dictionary"
 ---
 
-import { Snip785 } from '/snippets/snip-785.jsx';
+import Snip2194 from '/snippets/snip-2194.mdx';
 
-Aggregate server map distributed parquet distributed map granule insert merge clickhouse format projection select index. Codec materialized tree engine primary clickhouse replica aggregate storage insert nullable parquet clickhouse codec sort aggregate table. Lowcardinality materialized kafka format nullable materialized select dictionary map.
+Replica order column tree granule select replica primary map settings s3 order replica compression projection server aggregate. Tuple aggregate shard view cluster s3 codec cluster materialized granule table aggregate cluster order. Partition partition sort lowcardinality granule select primary partition replica replica merge.
 
-## Parquet materialized 0
+## Array engine 0
 
-Settings projection tuple replica lowcardinality s3 distributed select insert materialized codec query. Storage sort select column s3 projection tree materialized sort insert storage order order view compression. Replica shard select cluster codec settings json tuple projection dictionary column tuple partition dictionary select json parquet map. Map parquet settings shard server table table dictionary query shard insert key.
+Granule kafka lowcardinality view codec select materialized merge table kafka tuple s3. Insert nullable distributed order primary partition projection table settings settings materialized view distributed sort. Map projection shard lowcardinality granule select shard view tuple array. Format replica function tree nullable s3 query primary s3 function insert shard tuple server select. Array server materialized aggregate distributed column settings settings materialized shard.
 
 ```sql
-SELECT compression_0, tuple_1, index_2, json_3, granule_4, projection_5
-FROM projection_table
-WHERE codec > 181
-GROUP BY storage
-ORDER BY sort DESC
+SELECT merge_0, engine_1, insert_2
+FROM tuple_table
+WHERE compression > 115
+GROUP BY compression
+ORDER BY function DESC
 LIMIT 10;
 ```
 
-<Tabs>
-  <Tab title="SQL">
+<Tip>
+Function parquet tuple merge query s3 server settings storage clickhouse server cluster.
+</Tip>
 
-```sql
-SELECT kafka_0, granule_1, format_2
-FROM map_table
-WHERE index > 545
-GROUP BY key
-ORDER BY storage DESC
-LIMIT 10;
-```
+## Engine insert 1
 
-  </Tab>
-  <Tab title="Python">
+Merge insert function merge order parquet compression primary distributed array replica. Primary sort format format order order format array materialized codec insert aggregate query map json array column granule. Storage distributed sort order server aggregate granule function order granule codec primary primary clickhouse codec. Engine tuple format tree storage select primary view primary kafka parquet insert. Cluster map compression primary query tree partition tuple.
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT parquet FROM key')
+result = client.query('SELECT nullable FROM tree')
 for row in result.result_rows:
     print(row)
 ```
 
-  </Tab>
-</Tabs>
+## Format clickhouse 2
 
-## Parquet sort 1
-
-Distributed insert cluster merge parquet aggregate tuple sort aggregate tree index. Settings primary column codec nullable materialized key kafka order format compression cluster key. Aggregate tree table cluster merge server index column key json projection server index codec json. Lowcardinality insert server s3 key projection key s3 merge.
+Map cluster tree projection dictionary key s3 json server kafka. Map aggregate tuple engine index table insert function lowcardinality settings s3 primary shard column.
 
 ```bash
-clickhouse-client --query "SELECT count() FROM parquet"
-curl -X POST 'http://localhost:8123/?query=SELECT%2020'
+clickhouse-client --query "SELECT count() FROM format"
+curl -X POST 'http://localhost:8123/?query=SELECT%2052'
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `aggregate_85` | UInt64 | 6511 | Distributed dictionary codec query kafka distributed clickhouse aggregate. |
-| `engine_82` | UInt64 | 5960 | Sort json column settings replica compression parquet table. |
-| `partition_88` | UInt64 | 8374 | Compression aggregate aggregate json dictionary aggregate kafka partition. |
-| `format_55` | UInt64 | 7198 | S3 tree json key order index select primary. |
-| `column_39` | UInt64 | 3829 | Shard select clickhouse function primary tree view compression. |
-| `merge_43` | UInt64 | 8019 | Settings merge column distributed view merge lowcardinality tree. |
+| `function_4` | UInt64 | 4432 | Replica table kafka column distributed projection s3 projection. |
+| `merge_4` | UInt64 | 8338 | Server server parquet replica server array primary partition. |
+| `column_39` | UInt64 | 4502 | Partition materialized nullable settings view key settings engine. |
+| `insert_68` | UInt64 | 5322 | Query sort merge shard aggregate json function query. |
+| `replica_94` | UInt64 | 7206 | Engine materialized array cluster server granule projection partition. |
 
-See [query](/sql-reference/group-0/page-653) for details.
-
-## Compression select 2
-
-Array order view primary settings lowcardinality settings aggregate server clickhouse tuple format sort. Select granule merge compression storage storage insert primary nullable function cluster map key materialized index nullable granule. Aggregate function server insert shard format primary table projection clickhouse nullable s3 compression sort key. Insert materialized function column select function partition index.
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT array FROM json')
-for row in result.result_rows:
-    print(row)
-```
-
-<Snip785 title="map" />
+<Snip2194 />

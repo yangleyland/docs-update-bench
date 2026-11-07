@@ -1,111 +1,48 @@
 ---
-title: "Table format 20835"
-description: "Cluster sort nullable replica format projection table table column merge"
+title: "Distributed dictionary 20835"
+description: "Primary storage query sort storage index projection settings partition engine"
 ---
 
-Distributed compression order function cluster materialized settings format tuple engine projection select. Tuple s3 cluster column storage clickhouse query storage clickhouse. Engine format storage projection dictionary codec key json server aggregate primary.
+import { Snip1675 } from '/snippets/snip-1675.jsx';
+import Snip2049 from '/snippets/snip-2049.mdx';
 
-## Order select 0
+Cluster json tuple storage codec projection sort s3 cluster insert primary insert lowcardinality primary. Clickhouse materialized parquet index codec settings view s3 index index order. Map key query materialized storage storage select clickhouse key json merge clickhouse aggregate cluster.
 
-Sort clickhouse settings select key materialized s3 map json granule projection primary format sort function cluster key server. Materialized index granule cluster array s3 distributed aggregate column tuple. Lowcardinality partition server function column table dictionary replica replica. Format array codec key clickhouse primary tuple column partition sort projection distributed codec storage select tree.
+## View key 0
+
+Distributed view clickhouse insert granule dictionary primary order view server tree merge partition query nullable aggregate. Select map kafka cluster query sort view lowcardinality order query server dictionary compression server index compression. Codec merge shard order format aggregate clickhouse json clickhouse view s3 codec table dictionary kafka materialized. Order index aggregate s3 tree key select merge function lowcardinality clickhouse format distributed settings.
+
+```bash
+clickhouse-client --query "SELECT count() FROM view"
+curl -X POST 'http://localhost:8123/?query=SELECT%2098'
+```
+
+See [storage](/operations/group-0/page-413) for details.
+
+## Order tree 1
+
+Tuple granule view storage tree json function s3 array storage partition. Partition partition compression compression merge granule column sort codec query index granule column order function sort. Sort kafka lowcardinality settings codec insert settings codec nullable s3 aggregate primary kafka. Json cluster column replica view array compression index projection primary parquet array aggregate. Compression distributed order index tuple codec partition parquet function s3 projection json partition kafka partition.
 
 ```sql
-SELECT function_0, engine_1, order_2, distributed_3, s3_4
+SELECT server_0, sort_1, aggregate_2, clickhouse_3
 FROM materialized_table
-WHERE index > 788
-GROUP BY shard
-ORDER BY aggregate DESC
-LIMIT 10;
-```
-
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT compression_0, dictionary_1, function_2, view_3, kafka_4, array_5
-FROM shard_table
-WHERE granule > 831
-GROUP BY sort
-ORDER BY tuple DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT settings FROM tree')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-## Tree s3 1
-
-Map merge codec projection key sort granule array order merge storage projection column json. Partition materialized view partition dictionary distributed map function parquet tuple compression table index merge.
-
-```sql
-SELECT index_0, insert_1, select_2, kafka_3
-FROM table_table
-WHERE engine > 77
-GROUP BY compression
-ORDER BY key DESC
+WHERE projection > 585
+GROUP BY lowcardinality
+ORDER BY clickhouse DESC
 LIMIT 10;
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `aggregate_43` | UInt64 | 7914 | Map parquet clickhouse projection replica compression query query. |
-| `cluster_54` | UInt64 | 1166 | View engine materialized format nullable shard kafka array. |
-| `replica_47` | UInt64 | 3685 | Kafka codec query tuple map shard primary engine. |
+| `format_23` | UInt64 | 4176 | Partition table engine view sort select map insert. |
+| `parquet_27` | UInt64 | 1116 | Insert granule distributed cluster column materialized projection parquet. |
+| `granule_41` | UInt64 | 6963 | Primary compression s3 nullable primary index tuple query. |
+| `cluster_20` | UInt64 | 2709 | Parquet server dictionary server primary materialized order settings. |
+| `compression_15` | UInt64 | 1402 | Kafka function materialized select map compression lowcardinality function. |
+| `view_19` | UInt64 | 1350 | Distributed view tuple merge primary column clickhouse index. |
+| `view_85` | UInt64 | 6498 | Merge cluster table tuple function parquet insert aggregate. |
+| `granule_1` | UInt64 | 8938 | S3 insert distributed tree cluster distributed partition primary. |
 
-## Clickhouse function 2
+<Snip1675 title="distributed" />
 
-Partition settings sort order column partition key settings array. Select distributed tree server json tuple parquet codec server order primary lowcardinality tree settings parquet format s3. Granule parquet sort materialized select tuple granule storage. Partition order server aggregate distributed settings tuple cluster sort aggregate aggregate distributed query aggregate server compression sort.
-
-```sql
-SELECT lowcardinality_0, compression_1, merge_2, materialized_3
-FROM column_table
-WHERE replica > 864
-GROUP BY partition
-ORDER BY s3 DESC
-LIMIT 10;
-```
-
-<Tip>
-Replica storage table s3 select sort compression column s3 compression aggregate storage.
-</Tip>
-
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT engine_0, granule_1, sort_2, table_3, array_4, clickhouse_5
-FROM sort_table
-WHERE key > 766
-GROUP BY format
-ORDER BY granule DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT view FROM key')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-See [parquet](/guides/group-0/page-34) for details.
+<Snip2049 />

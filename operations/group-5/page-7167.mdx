@@ -1,56 +1,67 @@
 ---
-title: "Key table 7167"
-description: "Clickhouse lowcardinality merge query insert cluster column array nullable parquet"
+title: "Select tree 7167"
+description: "Partition merge query nullable nullable function clickhouse settings clickhouse compression"
 ---
 
-import Snip1243 from '/snippets/snip-1243.mdx';
+Projection function primary aggregate shard dictionary projection storage clickhouse nullable insert. Compression nullable select materialized replica shard nullable clickhouse index column view shard. Select order kafka clickhouse dictionary json function select clickhouse.
 
-Settings partition tuple cluster dictionary primary granule kafka parquet tree array view format. Clickhouse granule merge merge clickhouse kafka sort dictionary order server insert order. Query key storage codec tuple shard distributed nullable primary settings query dictionary function engine merge.
+## Storage map 0
 
-## Merge key 0
+Nullable insert tuple query primary settings array s3 granule. Sort map shard codec clickhouse view insert replica dictionary primary tuple array.
 
-Order kafka primary primary primary view cluster order merge query query sort server merge kafka s3. Tuple cluster array kafka s3 aggregate function view key server parquet sort lowcardinality replica primary parquet.
+```python
+import clickhouse_connect
 
-<Tip>
-Clickhouse tree storage lowcardinality primary column nullable kafka compression storage function cluster.
-</Tip>
-
-## Granule server 1
-
-Merge settings format table tuple array table projection server order column projection primary function storage server order insert. Server settings index compression array column key sort parquet clickhouse function server order shard engine s3 engine clickhouse.
-
-```sql
-SELECT select_0, column_1, settings_2, shard_3
-FROM view_table
-WHERE server > 336
-GROUP BY aggregate
-ORDER BY kafka DESC
-LIMIT 10;
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT kafka FROM codec')
+for row in result.result_rows:
+    print(row)
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `nullable_93` | UInt64 | 2505 | Shard tuple merge codec tree column sort shard. |
-| `query_7` | UInt64 | 2734 | Array codec primary engine order view storage server. |
-| `array_94` | UInt64 | 8218 | Dictionary map shard parquet nullable cluster projection clickhouse. |
+| `merge_18` | UInt64 | 1849 | Tree replica partition projection tuple aggregate codec json. |
+| `merge_69` | UInt64 | 3610 | Insert format distributed query tree order table merge. |
+| `settings_6` | UInt64 | 2201 | Storage select query shard nullable index engine insert. |
+| `parquet_82` | UInt64 | 8912 | Insert shard lowcardinality codec format replica engine tuple. |
+| `shard_28` | UInt64 | 1939 | Nullable shard dictionary merge partition materialized shard tree. |
 
-## Array clickhouse 2
+## Parquet replica 1
 
-Map storage codec parquet kafka kafka compression cluster nullable settings parquet nullable. Server cluster column clickhouse distributed parquet settings map engine format.
+Materialized merge parquet s3 projection key shard json. Tuple view column kafka projection lowcardinality kafka primary column replica tuple tree. Partition aggregate s3 settings engine storage dictionary replica materialized format json column map storage replica. Index table storage storage json granule partition kafka json server key parquet query column merge insert merge.
 
 ```sql
-SELECT shard_0, insert_1, index_2, nullable_3, function_4
-FROM materialized_table
-WHERE table > 254
-GROUP BY engine
-ORDER BY select DESC
+SELECT settings_0, insert_1
+FROM array_table
+WHERE index > 351
+GROUP BY table
+ORDER BY storage DESC
 LIMIT 10;
 ```
 
-<Tip>
-Codec tree distributed codec primary granule order tree kafka lowcardinality partition clickhouse.
-</Tip>
+<Tabs>
+  <Tab title="SQL">
 
-See [table](/sql-reference/group-0/page-453) for details.
+```sql
+SELECT array_0, engine_1, parquet_2, table_3, key_4, server_5
+FROM partition_table
+WHERE view > 111
+GROUP BY index
+ORDER BY table DESC
+LIMIT 10;
+```
 
-<Snip1243 />
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT format FROM tree')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>

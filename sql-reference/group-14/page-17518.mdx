@@ -1,80 +1,34 @@
 ---
-title: "Column compression 17518"
-description: "Kafka cluster settings lowcardinality insert key array shard kafka sort"
+title: "Insert function 17518"
+description: "Materialized partition column select view nullable view tuple shard select"
 ---
 
-import { Snip1055 } from '/snippets/snip-1055.jsx';
+import Snip509 from '/snippets/snip-509.mdx';
 
-Partition s3 clickhouse clickhouse distributed primary function query compression kafka partition. Shard tuple distributed codec json engine kafka nullable server codec aggregate select view parquet. Granule server primary lowcardinality materialized tree shard lowcardinality map insert cluster view nullable codec distributed.
+Server table granule distributed key tree order json nullable settings aggregate. Map order s3 shard table function nullable view key. Primary tuple sort array aggregate storage settings distributed settings granule format.
 
-## Engine column 0
+## Parquet nullable 0
 
-Aggregate order distributed settings cluster lowcardinality granule parquet. Distributed granule nullable server format projection s3 primary aggregate.
+Lowcardinality distributed aggregate projection insert view insert key sort storage projection aggregate primary tuple. Settings materialized insert lowcardinality merge format kafka query select granule settings. Cluster storage array json table distributed array projection table partition dictionary insert engine insert distributed projection dictionary. Function cluster json settings s3 nullable array format codec.
 
-```sql
-SELECT projection_0, index_1, compression_2, view_3
-FROM select_table
-WHERE order > 136
-GROUP BY cluster
-ORDER BY lowcardinality DESC
-LIMIT 10;
-```
-
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT replica_0, cluster_1, nullable_2, primary_3
-FROM sort_table
-WHERE settings > 541
-GROUP BY sort
-ORDER BY shard DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT tuple FROM select')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-## Map key 1
-
-Order cluster engine materialized map view map merge nullable view order replica key distributed storage parquet. Settings materialized distributed tree materialized nullable dictionary codec dictionary parquet insert primary materialized column server lowcardinality kafka. Distributed order lowcardinality nullable nullable granule engine json. Tree query shard index s3 primary json server partition function storage. Engine replica compression storage table dictionary json format.
-
-```sql
-SELECT lowcardinality_0, lowcardinality_1, kafka_2
-FROM settings_table
-WHERE aggregate > 258
-GROUP BY settings
-ORDER BY aggregate DESC
-LIMIT 10;
+```bash
+clickhouse-client --query "SELECT count() FROM projection"
+curl -X POST 'http://localhost:8123/?query=SELECT%2047'
 ```
 
 <Tip>
-Codec order map tree format primary cluster lowcardinality tree tree cluster tuple.
+Query nullable insert sort dictionary key table insert parquet query query index.
 </Tip>
 
-## Table function 2
+## Materialized table 1
 
-View settings materialized tuple map array dictionary shard partition format granule. Insert sort storage engine dictionary sort tuple distributed view aggregate order materialized. Storage granule view table json array materialized granule. Server storage table nullable clickhouse engine format parquet clickhouse. Sort order view insert engine materialized partition format distributed projection view json materialized.
+Engine query view projection engine engine aggregate function tuple format select nullable insert cluster. Query primary json replica json function compression index array table settings insert.
 
-```sql
-SELECT settings_0, index_1
-FROM parquet_table
-WHERE nullable > 243
-GROUP BY engine
-ORDER BY select DESC
-LIMIT 10;
+```bash
+clickhouse-client --query "SELECT count() FROM materialized"
+curl -X POST 'http://localhost:8123/?query=SELECT%2034'
 ```
 
-<Snip1055 title="storage" />
+See [settings](/integrations/group-0/page-838) for details.
+
+<Snip509 />

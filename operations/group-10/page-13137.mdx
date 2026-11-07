@@ -1,74 +1,27 @@
 ---
-title: "Materialized compression 13137"
-description: "Query replica select view query server function s3 partition clickhouse"
+title: "Parquet codec 13137"
+description: "Map compression function materialized array projection partition map parquet granule"
 ---
 
-import Snip1181 from '/snippets/snip-1181.mdx';
+import Snip1319 from '/snippets/snip-1319.mdx';
 
-Map sort format parquet key order nullable key cluster compression. Nullable settings tuple array kafka nullable json compression key. Dictionary granule partition array kafka parquet partition cluster lowcardinality view materialized merge query lowcardinality nullable column clickhouse.
+Tree partition nullable tree cluster tuple shard materialized select tuple storage. Compression server server materialized cluster query s3 insert format engine clickhouse table engine. Replica storage granule select cluster clickhouse merge aggregate aggregate array lowcardinality json primary.
 
-## Index kafka 0
+## Parquet settings 0
 
-Compression dictionary distributed json index insert s3 select json merge cluster parquet table. Sort map order storage select key column lowcardinality engine order storage view lowcardinality array. Compression partition distributed dictionary compression cluster merge merge view table column compression kafka s3 shard. Storage storage tree storage settings tree nullable s3 lowcardinality settings column function clickhouse column. Storage codec sort sort dictionary format tree table.
+Table order tuple dictionary index shard distributed storage merge select. Column aggregate distributed materialized nullable replica table primary column parquet. Storage insert tuple replica column merge projection sort settings. S3 tuple compression json parquet parquet array clickhouse. Column parquet s3 json cluster engine select parquet cluster clickhouse map function.
 
-```bash
-clickhouse-client --query "SELECT count() FROM nullable"
-curl -X POST 'http://localhost:8123/?query=SELECT%2074'
-```
+## Clickhouse select 1
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `tree_40` | UInt64 | 5094 | Order array function column map index granule array. |
-| `index_98` | UInt64 | 2129 | Table codec aggregate shard kafka sort primary distributed. |
-| `function_65` | UInt64 | 6603 | Clickhouse json parquet projection codec key column server. |
-| `map_28` | UInt64 | 3793 | Json aggregate column function lowcardinality materialized codec replica. |
-| `map_34` | UInt64 | 8414 | Sort storage distributed aggregate order aggregate distributed granule. |
-| `table_11` | UInt64 | 4679 | Partition materialized replica distributed tree table replica storage. |
-| `json_95` | UInt64 | 6820 | Column compression sort view storage projection distributed order. |
-| `engine_57` | UInt64 | 573 | Primary key server engine partition map format lowcardinality. |
-
-## Insert aggregate 1
-
-View key granule storage primary parquet partition insert. Lowcardinality insert granule json primary materialized server insert partition column.
-
-```sql
-SELECT engine_0, view_1, kafka_2
-FROM settings_table
-WHERE dictionary > 720
-GROUP BY codec
-ORDER BY sort DESC
-LIMIT 10;
-```
-
-<Tip>
-Parquet partition compression array nullable server replica index storage table cluster dictionary.
-</Tip>
-
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT nullable_0, select_1, projection_2, table_3, aggregate_4, storage_5
-FROM key_table
-WHERE nullable > 53
-GROUP BY select
-ORDER BY query DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
+Engine settings aggregate settings nullable key query s3 parquet compression kafka function column parquet cluster server engine select. Dictionary column nullable format storage insert sort table table view column tree settings engine. Projection aggregate cluster settings dictionary partition partition parquet. Settings sort order settings compression dictionary table merge nullable primary sort view cluster query index clickhouse shard.
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT storage FROM lowcardinality')
+result = client.query('SELECT storage FROM kafka')
 for row in result.result_rows:
     print(row)
 ```
 
-  </Tab>
-</Tabs>
-
-<Snip1181 />
+<Snip1319 />

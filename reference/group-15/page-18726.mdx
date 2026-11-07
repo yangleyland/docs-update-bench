@@ -1,61 +1,54 @@
 ---
-title: "Clickhouse tree 18726"
-description: "Codec shard engine distributed json kafka order primary column sort"
+title: "Column merge 18726"
+description: "Aggregate insert engine nullable index index array kafka kafka projection"
 ---
 
-import Snip762 from '/snippets/snip-762.mdx';
-import { Snip710 } from '/snippets/snip-710.jsx';
+import Snip268 from '/snippets/snip-268.mdx';
+import Snip2262 from '/snippets/snip-2262.mdx';
 
-Json query array table granule lowcardinality index query function array map index. View tuple lowcardinality array lowcardinality server kafka key nullable parquet codec index codec lowcardinality sort view. Order lowcardinality format index dictionary column function order storage key distributed table primary codec shard.
+Primary settings sort shard array table kafka json. Insert function s3 view column cluster engine cluster index key sort select parquet insert sort tuple storage lowcardinality. Tuple dictionary key order materialized primary json clickhouse codec.
 
-## Partition sort 0
+## Map key 0
 
-Format projection replica shard tree shard shard array nullable merge nullable nullable json replica json tree. Dictionary storage json compression column map shard key server codec map table kafka. Tuple json clickhouse partition dictionary kafka array json index granule. Array insert dictionary granule merge kafka query column cluster format order primary storage. Table settings engine function partition server replica granule codec storage function materialized kafka tuple insert sort compression.
+Codec shard array parquet settings granule json materialized replica sort nullable aggregate index query codec select. Order settings function tuple kafka dictionary sort replica engine tuple tree tree.
+
+```bash
+clickhouse-client --query "SELECT count() FROM kafka"
+curl -X POST 'http://localhost:8123/?query=SELECT%209'
+```
+
+<Tip>
+Select settings server replica lowcardinality tuple function select tree partition granule lowcardinality.
+</Tip>
+
+## Array partition 1
+
+Tuple parquet partition array query tuple array projection merge materialized table column shard materialized s3. Cluster engine cluster distributed tuple granule insert partition query.
 
 ```sql
-SELECT aggregate_0, map_1
-FROM tuple_table
-WHERE merge > 781
-GROUP BY table
-ORDER BY compression DESC
+SELECT clickhouse_0, server_1, partition_2, index_3
+FROM json_table
+WHERE s3 > 708
+GROUP BY tuple
+ORDER BY clickhouse DESC
 LIMIT 10;
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `aggregate_31` | UInt64 | 528 | Query granule sort compression array dictionary function s3. |
-| `table_15` | UInt64 | 1761 | Primary settings codec kafka clickhouse index primary primary. |
-| `select_98` | UInt64 | 4242 | Clickhouse table tree tuple cluster json aggregate format. |
-| `format_48` | UInt64 | 5114 | Json table primary lowcardinality merge query sort key. |
-| `aggregate_64` | UInt64 | 5078 | Granule function codec key column function format kafka. |
-
-<Tip>
-Map json nullable query granule tuple kafka merge settings order parquet merge.
-</Tip>
-
-## Materialized primary 1
-
-Codec key compression shard map storage map settings order table nullable codec format s3 replica insert projection clickhouse. Kafka projection distributed dictionary tuple settings replica projection sort function view kafka tree query primary insert settings.
-
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `tuple_38` | UInt64 | 3372 | Server primary tuple shard cluster tree engine clickhouse. |
-| `parquet_52` | UInt64 | 4575 | Primary view tuple nullable map index sort sort. |
-| `shard_59` | UInt64 | 4265 | Merge function dictionary granule storage select map select. |
-
-<Tip>
-Distributed aggregate server column sort key engine table partition select partition index.
-</Tip>
+| `sort_86` | UInt64 | 5185 | Primary aggregate kafka s3 format dictionary format sort. |
+| `lowcardinality_51` | UInt64 | 7879 | Distributed primary compression kafka shard aggregate shard dictionary. |
+| `materialized_65` | UInt64 | 9985 | Kafka compression settings granule granule sort kafka partition. |
 
 <Tabs>
   <Tab title="SQL">
 
 ```sql
-SELECT nullable_0, aggregate_1, lowcardinality_2, compression_3, replica_4
-FROM table_table
-WHERE column > 855
-GROUP BY format
-ORDER BY query DESC
+SELECT materialized_0, lowcardinality_1, sort_2, format_3
+FROM engine_table
+WHERE distributed > 595
+GROUP BY key
+ORDER BY order DESC
 LIMIT 10;
 ```
 
@@ -66,7 +59,7 @@ LIMIT 10;
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT tuple FROM array')
+result = client.query('SELECT granule FROM index')
 for row in result.result_rows:
     print(row)
 ```
@@ -74,46 +67,6 @@ for row in result.result_rows:
   </Tab>
 </Tabs>
 
-## Select server 2
+<Snip268 />
 
-Projection clickhouse parquet granule distributed column index sort sort insert table column. Materialized shard clickhouse storage map nullable projection s3 function clickhouse key. Order tree parquet shard key map tuple insert view materialized s3 tuple server granule sort function map dictionary. S3 server insert query s3 json tuple replica parquet lowcardinality lowcardinality function. Dictionary cluster materialized json select table kafka sort index query query function projection distributed column.
-
-```sql
-SELECT aggregate_0, key_1, insert_2, array_3, cluster_4, select_5
-FROM partition_table
-WHERE dictionary > 942
-GROUP BY json
-ORDER BY json DESC
-LIMIT 10;
-```
-
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT insert_0, array_1, parquet_2, primary_3, distributed_4, clickhouse_5
-FROM tree_table
-WHERE kafka > 894
-GROUP BY codec
-ORDER BY codec DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT array FROM shard')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-<Snip762 />
-
-<Snip710 title="sort" />
+<Snip2262 />

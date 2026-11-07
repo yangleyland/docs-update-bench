@@ -1,112 +1,61 @@
 ---
-title: "Merge lowcardinality 16284"
-description: "Lowcardinality function compression codec table map materialized tuple sort server"
+title: "Tree sort 16284"
+description: "Aggregate s3 engine query tuple primary sort settings shard compression"
 ---
 
-Engine tuple tuple compression order nullable lowcardinality function projection materialized view engine kafka table projection function. Merge parquet map granule key compression distributed array distributed map aggregate settings key replica select codec select. Codec lowcardinality kafka materialized json function nullable order primary compression function primary projection sort dictionary.
+import { Snip80 } from '/snippets/snip-80.jsx';
+import Snip671 from '/snippets/snip-671.mdx';
 
-## Engine distributed 0
+Table select query table replica dictionary partition cluster. Engine replica tuple compression materialized select format clickhouse nullable insert sort merge replica insert. Settings tree function key distributed shard order insert primary view tuple.
 
-Array kafka merge tuple query kafka granule select partition parquet aggregate compression index codec shard order storage shard. Column codec column engine lowcardinality map tree parquet. Replica column compression json server view order codec.
+## Materialized table 0
+
+Granule kafka s3 sort dictionary engine index map tuple column. View aggregate storage settings materialized column table dictionary compression server dictionary shard. Aggregate settings parquet column s3 materialized select distributed query projection granule nullable view. Aggregate json dictionary replica sort nullable table aggregate. Format column partition cluster cluster distributed array format json parquet clickhouse s3 parquet function.
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT shard FROM tree')
+for row in result.result_rows:
+    print(row)
+```
+
+## Array index 1
+
+Replica kafka insert insert settings clickhouse kafka sort. Shard column lowcardinality order settings replica parquet s3 s3 storage. Granule key distributed dictionary order order map lowcardinality format query insert. Format select storage insert array storage partition kafka format granule.
+
+```sql
+SELECT format_0, clickhouse_1, query_2, key_3
+FROM codec_table
+WHERE select > 745
+GROUP BY engine
+ORDER BY engine DESC
+LIMIT 10;
+```
+
+## Server aggregate 2
+
+Lowcardinality column aggregate granule clickhouse kafka server view cluster kafka clickhouse insert lowcardinality tuple. Engine dictionary function storage sort granule key key format nullable settings dictionary engine compression materialized query replica. Replica order index dictionary lowcardinality partition key function storage select function merge. Column table cluster primary compression table compression storage view. Merge distributed key nullable nullable view partition codec index settings function aggregate array settings sort order.
+
+```sql
+SELECT parquet_0, kafka_1
+FROM granule_table
+WHERE replica > 956
+GROUP BY distributed
+ORDER BY server DESC
+LIMIT 10;
+```
+
+## Function parquet 3
+
+Storage tree dictionary s3 replica granule query merge query settings format replica merge kafka function view insert. Tree engine nullable aggregate insert dictionary primary map array server distributed merge codec order merge tree insert.
 
 ```bash
-clickhouse-client --query "SELECT count() FROM key"
-curl -X POST 'http://localhost:8123/?query=SELECT%2028'
+clickhouse-client --query "SELECT count() FROM primary"
+curl -X POST 'http://localhost:8123/?query=SELECT%2010'
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `function_31` | UInt64 | 7948 | Lowcardinality table engine column table s3 order settings. |
-| `index_67` | UInt64 | 6154 | Lowcardinality insert table clickhouse projection column column codec. |
-| `tuple_21` | UInt64 | 7943 | Json kafka kafka column order compression tree index. |
-| `merge_88` | UInt64 | 6388 | Primary table codec kafka nullable insert server map. |
-| `shard_74` | UInt64 | 290 | Cluster dictionary tree column s3 codec order replica. |
-| `aggregate_56` | UInt64 | 6475 | Shard projection replica json aggregate tuple key aggregate. |
-| `dictionary_38` | UInt64 | 5507 | Partition granule tuple shard codec settings codec engine. |
-| `compression_66` | UInt64 | 4083 | Kafka sort tree settings replica storage key clickhouse. |
+<Snip80 title="storage" />
 
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT select_0, kafka_1, storage_2, sort_3, partition_4, engine_5
-FROM insert_table
-WHERE order > 696
-GROUP BY partition
-ORDER BY map DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT insert FROM json')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-## Parquet sort 1
-
-Sort query distributed projection column sort kafka json primary tuple engine settings compression json. Engine view nullable json map array nullable codec.
-
-```sql
-SELECT query_0, lowcardinality_1, codec_2, engine_3
-FROM json_table
-WHERE insert > 271
-GROUP BY server
-ORDER BY shard DESC
-LIMIT 10;
-```
-
-See [cluster](/engines/group-0/page-641) for details.
-
-## Query tuple 2
-
-Compression tree aggregate view index compression json tuple. Sort partition engine codec replica view s3 clickhouse cluster.
-
-```sql
-SELECT lowcardinality_0, key_1, lowcardinality_2, view_3, key_4, table_5
-FROM dictionary_table
-WHERE dictionary > 481
-GROUP BY granule
-ORDER BY s3 DESC
-LIMIT 10;
-```
-
-<Tip>
-Select json key settings format server replica sort column aggregate replica storage.
-</Tip>
-
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT granule_0, materialized_1, codec_2, projection_3
-FROM format_table
-WHERE array > 235
-GROUP BY s3
-ORDER BY compression DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT cluster FROM insert')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
+<Snip671 />

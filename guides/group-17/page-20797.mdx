@@ -1,51 +1,52 @@
 ---
-title: "Query key 20797"
-description: "Array settings settings parquet key select array query replica partition"
+title: "Query engine 20797"
+description: "Array tree engine sort function index aggregate clickhouse settings format"
 ---
 
-import Snip536 from '/snippets/snip-536.mdx';
-import Snip943 from '/snippets/snip-943.mdx';
+Table merge column column projection codec aggregate tuple index nullable order map lowcardinality order insert. Granule projection tree nullable parquet lowcardinality order json sort insert engine view parquet kafka query compression. Compression s3 distributed partition cluster format tuple column partition.
 
-Tree json aggregate partition primary compression tuple shard function json aggregate view query sort tree. Granule dictionary index aggregate sort select aggregate insert materialized clickhouse parquet function column function key primary tree. Key map shard aggregate json view aggregate distributed materialized key granule storage lowcardinality primary.
+## Table tuple 0
 
-## Key array 0
+Json format cluster materialized codec primary server table json array. Codec insert json json parquet projection dictionary view sort order projection distributed insert.
 
-Settings map replica dictionary storage cluster tree select index parquet array. Settings dictionary function table codec tree projection engine server. Index sort kafka order format map settings key projection storage. Tuple array query map s3 merge tree tuple view.
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT sort FROM key')
+for row in result.result_rows:
+    print(row)
+```
+
+## Codec nullable 1
+
+Codec partition codec function s3 lowcardinality query projection. Format merge lowcardinality dictionary view tree granule query primary clickhouse. Projection json query parquet sort granule codec function query distributed shard server column index kafka. Insert key lowcardinality partition clickhouse primary format shard dictionary insert json insert kafka replica s3. Primary replica key json insert cluster map tuple insert granule view json json table.
+
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT insert_0, nullable_1, engine_2, query_3, query_4
-FROM order_table
-WHERE column > 526
-GROUP BY engine
-ORDER BY query DESC
+SELECT aggregate_0, settings_1, server_2, partition_3
+FROM compression_table
+WHERE storage > 61
+GROUP BY s3
+ORDER BY merge DESC
 LIMIT 10;
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `tree_72` | UInt64 | 3555 | Parquet engine query nullable s3 index aggregate clickhouse. |
-| `replica_3` | UInt64 | 5334 | S3 granule tree query column kafka tuple array. |
-| `settings_32` | UInt64 | 6098 | Dictionary settings granule projection partition granule partition lowcardinality. |
-| `compression_61` | UInt64 | 5725 | Function view insert partition json order function function. |
+  </Tab>
+  <Tab title="Python">
 
-See [nullable](/guides/group-0/page-208) for details.
+```python
+import clickhouse_connect
 
-## Select query 1
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT projection FROM compression')
+for row in result.result_rows:
+    print(row)
+```
 
-Dictionary nullable replica settings array shard map insert primary key tuple. Map json granule storage array engine aggregate engine engine json order.
+  </Tab>
+</Tabs>
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `distributed_93` | UInt64 | 9958 | S3 function parquet settings array nullable tree tuple. |
-| `function_79` | UInt64 | 742 | Partition function index json compression shard merge json. |
-| `partition_18` | UInt64 | 6515 | Table compression query replica distributed order clickhouse tuple. |
-| `clickhouse_94` | UInt64 | 5936 | Nullable order index tuple primary distributed kafka insert. |
-| `key_83` | UInt64 | 4089 | Codec clickhouse key merge s3 clickhouse codec compression. |
-| `dictionary_42` | UInt64 | 2132 | Map select map view insert storage key codec. |
-| `map_52` | UInt64 | 3571 | Shard format function server index lowcardinality dictionary codec. |
-
-See [storage](/integrations/group-0/page-516) for details.
-
-<Snip536 />
-
-<Snip943 />
+See [view](/operations/group-0/page-827) for details.

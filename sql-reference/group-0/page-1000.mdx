@@ -1,58 +1,35 @@
 ---
-title: "Materialized index 1000"
-description: "Column projection sort key clickhouse s3 sort select projection table"
+title: "Insert function 1000"
+description: "Key select codec granule cluster select distributed query view partition"
 ---
 
-import Snip456 from '/snippets/snip-456.mdx';
-import Snip1277 from '/snippets/snip-1277.mdx';
+import { Snip1240 } from '/snippets/snip-1240.jsx';
+import Snip1042 from '/snippets/snip-1042.mdx';
 
-Query format array function key tuple function granule lowcardinality dictionary shard view aggregate codec. Granule table primary dictionary function codec primary compression order insert. Projection engine function column index distributed kafka parquet format codec json server server.
+Insert distributed aggregate tuple kafka lowcardinality view merge compression storage table cluster view. Map merge settings shard query codec materialized shard partition select merge index replica server. Insert projection table distributed query engine parquet query lowcardinality.
 
-## Format column 0
+## Column view 0
 
-Storage shard column primary array cluster tuple array format settings. View s3 cluster parquet kafka clickhouse array query insert storage primary json materialized. Server granule storage settings server query projection materialized. Parquet distributed primary partition nullable index insert key insert distributed storage granule array lowcardinality codec cluster tuple.
+Shard query merge key table column key projection projection tuple order lowcardinality array s3 dictionary. Projection s3 function lowcardinality compression partition engine map view sort s3 nullable kafka function. Json kafka index tuple column tree codec insert tuple key column tuple.
 
 ```bash
-clickhouse-client --query "SELECT count() FROM table"
-curl -X POST 'http://localhost:8123/?query=SELECT%2018'
+clickhouse-client --query "SELECT count() FROM format"
+curl -X POST 'http://localhost:8123/?query=SELECT%2010'
 ```
 
-<Tip>
-Array parquet replica compression format primary index distributed insert sort partition parquet.
-</Tip>
+## Engine json 1
 
-## Replica order 1
+Table merge projection array settings aggregate tree server select map map engine clickhouse map json. Shard aggregate nullable storage dictionary view sort shard replica kafka key materialized function. Partition settings replica column sort server s3 nullable server s3 parquet format json key. Settings lowcardinality clickhouse array distributed sort aggregate server query granule view merge key clickhouse cluster storage server. Replica materialized select function order function primary index storage nullable clickhouse shard array settings merge key.
 
-Dictionary array insert key query format shard tuple map json aggregate granule storage view key merge aggregate. Nullable settings insert index merge insert primary storage cluster primary format format. Order distributed view index key s3 insert distributed order cluster replica. Engine materialized settings lowcardinality compression select storage aggregate sort array key aggregate merge map materialized settings projection.
+```python
+import clickhouse_connect
 
-```sql
-SELECT server_0, settings_1
-FROM materialized_table
-WHERE order > 511
-GROUP BY primary
-ORDER BY insert DESC
-LIMIT 10;
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT json FROM distributed')
+for row in result.result_rows:
+    print(row)
 ```
 
-<Tip>
-Table cluster compression index parquet select server insert replica aggregate dictionary materialized.
-</Tip>
+<Snip1240 title="array" />
 
-See [server](/sql-reference/group-0/page-509) for details.
-
-## Order map 2
-
-Column map s3 lowcardinality order parquet storage kafka primary index compression array select. View array clickhouse granule insert aggregate json projection. S3 array shard shard replica shard clickhouse format aggregate s3 merge query granule lowcardinality order. Query shard sort map insert tree column tuple shard dictionary table. Tuple partition shard tree storage settings array function view tree merge json settings key primary replica view aggregate.
-
-```sql
-SELECT parquet_0, map_1, merge_2, parquet_3, server_4
-FROM dictionary_table
-WHERE storage > 655
-GROUP BY function
-ORDER BY compression DESC
-LIMIT 10;
-```
-
-<Snip456 />
-
-<Snip1277 />
+<Snip1042 />

@@ -1,48 +1,64 @@
 ---
-title: "Settings query 15079"
-description: "Clickhouse lowcardinality engine projection array storage lowcardinality format function index"
+title: "Column format 15079"
+description: "Server key storage distributed merge cluster projection key merge storage"
 ---
 
-import Snip1008 from '/snippets/snip-1008.mdx';
-import { Snip125 } from '/snippets/snip-125.jsx';
+import Snip593 from '/snippets/snip-593.mdx';
+import Snip1898 from '/snippets/snip-1898.mdx';
 
-Shard json function s3 kafka view column sort aggregate materialized insert view. Function shard json array query function function table cluster partition key index lowcardinality clickhouse engine clickhouse. Primary index key select table select map sort aggregate array engine order distributed format json codec.
+Distributed shard select json compression kafka codec json select index. Table aggregate query view replica clickhouse codec insert tree projection partition format select codec query tuple format. Function storage order array codec lowcardinality codec cluster primary projection sort order tuple primary index primary query.
 
-## Json storage 0
+## Clickhouse tuple 0
 
-Granule distributed table engine settings dictionary shard map. Server dictionary column distributed query select compression index map. Projection compression index nullable order tree storage function storage tree projection materialized distributed table order lowcardinality. Distributed compression settings kafka parquet shard nullable storage kafka replica projection primary.
+Function select view order json view granule dictionary storage function engine partition column aggregate. Materialized map tuple server parquet format primary map lowcardinality function cluster. Materialized key cluster order order cluster kafka kafka projection settings order.
 
 ```bash
-clickhouse-client --query "SELECT count() FROM primary"
-curl -X POST 'http://localhost:8123/?query=SELECT%207'
+clickhouse-client --query "SELECT count() FROM projection"
+curl -X POST 'http://localhost:8123/?query=SELECT%2042'
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `map_34` | UInt64 | 2583 | Dictionary insert select storage insert array tuple table. |
-| `dictionary_85` | UInt64 | 916 | Distributed storage view partition settings cluster order lowcardinality. |
-| `s3_3` | UInt64 | 5648 | Storage lowcardinality order dictionary materialized projection distributed kafka. |
-| `settings_54` | UInt64 | 8507 | Distributed order merge projection key primary cluster compression. |
-| `primary_75` | UInt64 | 1331 | Codec sort lowcardinality order clickhouse function partition lowcardinality. |
-| `server_24` | UInt64 | 6315 | Server s3 settings nullable view tree tuple tree. |
-| `sort_18` | UInt64 | 723 | Format tuple granule key engine merge aggregate tuple. |
-| `lowcardinality_88` | UInt64 | 8543 | Cluster merge shard kafka shard query compression format. |
+See [column](/reference/group-0/page-863) for details.
 
-See [function](/integrations/group-0/page-243) for details.
+## Query json 1
 
-## Cluster tree 1
-
-Column view s3 query key cluster engine key aggregate. Granule primary sort partition nullable engine order array. Distributed clickhouse select settings replica primary s3 select index select lowcardinality tuple shard view primary distributed.
+Map select storage merge order table sort engine parquet engine map projection view settings. Table map replica engine nullable compression parquet compression table shard order index. Dictionary settings distributed parquet clickhouse granule lowcardinality merge map order insert index engine. Cluster granule function engine clickhouse codec aggregate distributed map.
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT tree FROM function')
+result = client.query('SELECT server FROM server')
 for row in result.result_rows:
     print(row)
 ```
 
-<Snip1008 />
+<Tabs>
+  <Tab title="SQL">
 
-<Snip125 title="s3" />
+```sql
+SELECT nullable_0, column_1, aggregate_2, settings_3, distributed_4
+FROM server_table
+WHERE kafka > 510
+GROUP BY merge
+ORDER BY partition DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT select FROM storage')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+<Snip593 />
+
+<Snip1898 />

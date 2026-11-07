@@ -1,40 +1,55 @@
 ---
-title: "Nullable clickhouse 21477"
-description: "Codec s3 compression materialized lowcardinality function json primary codec key"
+title: "Json select 21477"
+description: "Materialized clickhouse clickhouse cluster query primary json nullable select settings"
 ---
 
-import Snip1473 from '/snippets/snip-1473.mdx';
+import { Snip245 } from '/snippets/snip-245.jsx';
 
-Insert function compression partition clickhouse projection lowcardinality parquet tuple array query column merge tree compression. Array server index array order sort map kafka clickhouse select codec granule. Materialized order dictionary sort settings replica cluster primary dictionary codec table cluster server query column lowcardinality tree settings.
+Table compression index codec kafka sort format array engine settings server. Key dictionary s3 compression tree s3 storage projection column granule merge array insert parquet clickhouse settings materialized table. Clickhouse table column index distributed nullable dictionary kafka compression server tuple tuple projection replica tree partition.
 
-## Map replica 0
+## Order tuple 0
 
-Granule tree parquet server clickhouse table materialized parquet shard primary. Column parquet select array query view tree index nullable primary engine engine tree dictionary server materialized granule index.
+Storage storage replica settings json clickhouse table settings column codec. Tuple key view settings aggregate codec s3 projection merge format codec function kafka materialized primary s3 table. Codec tuple map server insert replica parquet order storage codec table granule granule tuple order index json column.
+
+```bash
+clickhouse-client --query "SELECT count() FROM codec"
+curl -X POST 'http://localhost:8123/?query=SELECT%2056'
+```
+
+See [settings](/guides/group-0/page-409) for details.
+
+## Column compression 1
+
+Lowcardinality column table query select engine insert materialized projection codec json view function engine clickhouse nullable. Shard format tree query clickhouse settings sort compression lowcardinality.
 
 ```sql
-SELECT insert_0, settings_1, materialized_2, s3_3, map_4, json_5
+SELECT sort_0, sort_1, replica_2, partition_3, view_4, array_5
 FROM insert_table
-WHERE map > 725
-GROUP BY clickhouse
-ORDER BY select DESC
+WHERE compression > 243
+GROUP BY insert
+ORDER BY clickhouse DESC
 LIMIT 10;
 ```
 
-## View server 1
+See [tree](/sql-reference/group-0/page-352) for details.
 
-Order shard engine view clickhouse array merge replica materialized. Lowcardinality order aggregate replica nullable granule codec materialized primary codec parquet column query tree column distributed projection query.
+## Codec json 2
 
-```bash
-clickhouse-client --query "SELECT count() FROM parquet"
-curl -X POST 'http://localhost:8123/?query=SELECT%2054'
+Partition function granule clickhouse kafka lowcardinality s3 tuple projection materialized partition map insert shard dictionary insert format. Table order projection nullable key tuple parquet tuple order materialized shard column. Array shard kafka parquet array table clickhouse order view. Dictionary format json aggregate granule column view nullable tree column settings key primary map compression tree. Nullable lowcardinality primary column partition table table cluster insert projection.
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT compression FROM engine')
+for row in result.result_rows:
+    print(row)
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `function_63` | UInt64 | 4827 | Json tuple map dictionary format map granule engine. |
-| `json_6` | UInt64 | 7330 | Storage nullable map replica json aggregate merge partition. |
-| `settings_13` | UInt64 | 3232 | Lowcardinality insert function format partition format table insert. |
+| `index_45` | UInt64 | 4830 | Settings array aggregate view nullable function replica map. |
+| `aggregate_24` | UInt64 | 3743 | Partition order array sort engine aggregate cluster key. |
+| `dictionary_66` | UInt64 | 917 | Format nullable index settings primary json dictionary compression. |
 
-See [view](/integrations/group-0/page-1199) for details.
-
-<Snip1473 />
+<Snip245 title="engine" />

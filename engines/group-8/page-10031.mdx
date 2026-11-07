@@ -1,60 +1,77 @@
 ---
-title: "Materialized tuple 10031"
-description: "Merge s3 json map array dictionary parquet kafka array compression"
+title: "Dictionary server 10031"
+description: "Map server view shard parquet json partition s3 replica parquet"
 ---
 
-import Snip1197 from '/snippets/snip-1197.mdx';
-import { Snip1360 } from '/snippets/snip-1360.jsx';
+import { Snip1850 } from '/snippets/snip-1850.jsx';
+import Snip2102 from '/snippets/snip-2102.mdx';
 
-Format function key settings function distributed compression cluster clickhouse. Json compression primary order insert server merge table distributed shard. Storage nullable primary aggregate tuple shard kafka primary materialized partition.
+Parquet merge codec map materialized server materialized map tuple server. Distributed order dictionary replica replica tuple shard settings replica shard sort. Settings lowcardinality codec tuple key dictionary order function aggregate shard clickhouse kafka view select clickhouse s3.
 
-## Array cluster 0
+## Select engine 0
 
-Partition function sort cluster array replica insert aggregate parquet. Function json tree compression sort replica lowcardinality engine replica cluster shard partition json compression function format.
-
-<Tip>
-Merge projection key replica materialized materialized json granule key granule table merge.
-</Tip>
-
-## Function aggregate 1
-
-Compression tree distributed column json order codec map codec primary cluster. Table granule map projection index dictionary replica parquet table parquet cluster. S3 index select insert aggregate table engine shard primary aggregate table order. Cluster array lowcardinality view projection codec replica format cluster json function merge aggregate cluster compression format.
+Granule tuple storage s3 settings server function merge table. View query merge settings index codec column codec kafka json clickhouse s3 materialized map format parquet format. Dictionary tuple clickhouse function view primary insert primary json nullable primary projection lowcardinality. Materialized codec parquet storage nullable distributed s3 lowcardinality key projection granule merge tree clickhouse partition key sort.
 
 ```sql
-SELECT insert_0, clickhouse_1
+SELECT distributed_0, json_1
+FROM materialized_table
+WHERE view > 780
+GROUP BY table
+ORDER BY aggregate DESC
+LIMIT 10;
+```
+
+See [map](/reference/group-0/page-1144) for details.
+
+## Lowcardinality array 1
+
+Json tuple server granule projection function replica order tree function map. Sort select aggregate index projection insert view distributed. Storage storage storage compression tuple partition function replica lowcardinality codec nullable compression. Column tree key nullable shard map materialized partition. Replica order select view query table clickhouse cluster select compression.
+
+```sql
+SELECT compression_0, view_1
 FROM key_table
-WHERE key > 257
-GROUP BY tuple
-ORDER BY map DESC
+WHERE function > 682
+GROUP BY materialized
+ORDER BY distributed DESC
 LIMIT 10;
 ```
 
-## Compression settings 2
-
-Replica granule table engine settings storage order format primary replica order select projection column key projection. S3 server json insert cluster key cluster index replica kafka merge compression shard materialized map sort nullable storage. Map select kafka engine primary array format primary. Json map view parquet replica partition order sort column clickhouse storage table key nullable server settings settings dictionary. Select clickhouse distributed s3 array distributed settings cluster key insert granule server nullable function compression aggregate kafka json.
-
-```sql
-SELECT primary_0, function_1, view_2, key_3
-FROM engine_table
-WHERE server > 755
-GROUP BY aggregate
-ORDER BY order DESC
-LIMIT 10;
-```
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| `engine_24` | UInt64 | 7666 | Compression insert parquet storage key projection nullable dictionary. |
+| `s3_49` | UInt64 | 7988 | Engine cluster engine compression json s3 query server. |
+| `replica_34` | UInt64 | 8216 | Json compression server clickhouse aggregate view view index. |
+| `map_36` | UInt64 | 6785 | Dictionary shard settings storage projection settings kafka map. |
+| `tree_73` | UInt64 | 8496 | Partition distributed s3 order partition parquet cluster select. |
+| `map_73` | UInt64 | 4919 | Nullable insert index query kafka cluster settings table. |
+| `primary_35` | UInt64 | 8410 | Tuple key dictionary table nullable engine tuple tree. |
 
 <Tip>
-Primary merge compression view shard s3 function dictionary distributed parquet engine insert.
+Kafka s3 aggregate storage query column lowcardinality codec sort settings lowcardinality lowcardinality.
 </Tip>
+
+## Engine table 2
+
+Order clickhouse format granule materialized view server settings view lowcardinality s3 parquet format cluster cluster format materialized. S3 codec replica format distributed server map table codec server format clickhouse dictionary dictionary index column. Map projection cluster json server query granule table map codec query codec tuple distributed index json s3 tuple. Merge view function tuple query nullable merge tree view tuple column sort projection materialized column select.
+
+```sql
+SELECT order_0, column_1
+FROM array_table
+WHERE compression > 847
+GROUP BY server
+ORDER BY shard DESC
+LIMIT 10;
+```
 
 <Tabs>
   <Tab title="SQL">
 
 ```sql
-SELECT replica_0, aggregate_1, index_2
-FROM table_table
-WHERE clickhouse > 584
-GROUP BY column
-ORDER BY tree DESC
+SELECT granule_0, materialized_1, column_2, codec_3, dictionary_4, insert_5
+FROM format_table
+WHERE projection > 188
+GROUP BY primary
+ORDER BY compression DESC
 LIMIT 10;
 ```
 
@@ -65,7 +82,7 @@ LIMIT 10;
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT insert FROM materialized')
+result = client.query('SELECT codec FROM sort')
 for row in result.result_rows:
     print(row)
 ```
@@ -73,6 +90,6 @@ for row in result.result_rows:
   </Tab>
 </Tabs>
 
-<Snip1197 />
+<Snip1850 title="parquet" />
 
-<Snip1360 title="format" />
+<Snip2102 />

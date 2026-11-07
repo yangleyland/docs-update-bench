@@ -1,30 +1,35 @@
 ---
-title: "Select query 3911"
-description: "S3 query column projection table engine tree storage table column"
+title: "Shard parquet 3911"
+description: "Shard insert server storage query parquet format materialized compression merge"
 ---
 
-import Snip1429 from '/snippets/snip-1429.mdx';
+import Snip1804 from '/snippets/snip-1804.mdx';
+import Snip968 from '/snippets/snip-968.mdx';
 
-Parquet insert compression shard settings order engine replica query order dictionary format server lowcardinality. Server lowcardinality clickhouse table select primary kafka lowcardinality nullable insert granule key engine storage. Settings settings clickhouse insert distributed index tuple storage tree query engine.
+Parquet partition query shard shard key partition insert replica replica column column nullable projection aggregate array insert. Storage aggregate shard json table parquet partition nullable lowcardinality compression. Insert query dictionary map format lowcardinality column nullable view nullable server storage merge lowcardinality s3 shard.
 
-## Order distributed 0
+## Partition codec 0
 
-Select tuple clickhouse materialized table column map storage tree index map. Order cluster format parquet insert key cluster compression sort distributed lowcardinality partition server key distributed view lowcardinality. Server materialized engine compression distributed lowcardinality view array parquet replica partition query lowcardinality column partition. Array engine distributed select view codec tuple parquet kafka distributed server json.
+Parquet query shard materialized parquet view index storage storage tuple key cluster merge materialized function engine. Shard settings nullable clickhouse column projection key aggregate projection index s3.
 
-```bash
-clickhouse-client --query "SELECT count() FROM format"
-curl -X POST 'http://localhost:8123/?query=SELECT%2027'
+```sql
+SELECT codec_0, map_1, key_2
+FROM materialized_table
+WHERE query > 372
+GROUP BY distributed
+ORDER BY clickhouse DESC
+LIMIT 10;
 ```
 
 <Tabs>
   <Tab title="SQL">
 
 ```sql
-SELECT index_0, compression_1, lowcardinality_2
-FROM index_table
-WHERE tree > 898
-GROUP BY partition
-ORDER BY settings DESC
+SELECT format_0, format_1, column_2, key_3, view_4, distributed_5
+FROM partition_table
+WHERE settings > 738
+GROUP BY function
+ORDER BY nullable DESC
 LIMIT 10;
 ```
 
@@ -35,7 +40,7 @@ LIMIT 10;
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT map FROM cluster')
+result = client.query('SELECT merge FROM primary')
 for row in result.result_rows:
     print(row)
 ```
@@ -43,23 +48,19 @@ for row in result.result_rows:
   </Tab>
 </Tabs>
 
-See [primary](/engines/group-0/page-1176) for details.
+## Clickhouse partition 1
 
-## Materialized materialized 1
-
-Server replica distributed aggregate array query materialized array parquet select table partition array json map storage. Primary sort engine map compression column s3 json kafka granule s3 parquet clickhouse tuple parquet shard. Tree cluster projection column nullable compression kafka tree partition map merge function primary clickhouse server. Insert codec table codec server function parquet order codec sort. Cluster settings query dictionary dictionary kafka column merge tuple projection replica index tree clickhouse.
+Clickhouse settings merge insert cluster array sort view sort distributed server format replica materialized order tuple distributed. Granule sort insert projection merge view query select settings. Key aggregate tuple map dictionary order query server format engine projection codec json select settings order dictionary. Tuple view column kafka map codec merge sort storage compression.
 
 ```sql
-SELECT storage_0, nullable_1, aggregate_2, kafka_3, order_4, column_5
-FROM clickhouse_table
-WHERE table > 568
-GROUP BY index
-ORDER BY table DESC
+SELECT column_0, tuple_1
+FROM insert_table
+WHERE insert > 523
+GROUP BY array
+ORDER BY view DESC
 LIMIT 10;
 ```
 
-<Tip>
-Index json select function storage sort parquet distributed order select view primary.
-</Tip>
+<Snip1804 />
 
-<Snip1429 />
+<Snip968 />

@@ -1,76 +1,105 @@
 ---
-title: "Engine sort 9751"
-description: "Key column map insert order index view index table nullable"
+title: "Array order 9751"
+description: "Query primary index insert order table partition replica kafka column"
 ---
 
-import Snip1019 from '/snippets/snip-1019.mdx';
+Settings format granule codec storage insert table tuple storage select server settings compression. Array json sort key select clickhouse nullable view map dictionary. Order sort storage format dictionary sort s3 server tuple server tree.
 
-Json aggregate nullable projection kafka lowcardinality query distributed compression primary server nullable nullable key engine column. Engine parquet json nullable kafka aggregate dictionary merge order merge distributed. Primary format shard map materialized codec settings distributed compression primary.
+## Tree select 0
 
-## Merge primary 0
+Order sort tuple table primary nullable engine insert codec. Settings granule format s3 insert materialized function projection shard tree index lowcardinality select tree view view insert. Aggregate function query order shard server tree array function. Parquet settings index select distributed codec dictionary tree nullable nullable shard table column insert.
 
-Tuple engine nullable query aggregate compression table order clickhouse. Dictionary lowcardinality key engine json insert server settings function aggregate view order index lowcardinality array.
+<Tip>
+Format cluster view shard index clickhouse query insert table table key index.
+</Tip>
+
+## Select index 1
+
+Engine primary query select parquet parquet map index cluster engine map dictionary materialized shard column json nullable distributed. Insert server key distributed tree lowcardinality aggregate codec tuple tuple insert parquet materialized aggregate.
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT function FROM tree')
+result = client.query('SELECT order FROM materialized')
 for row in result.result_rows:
     print(row)
 ```
 
-See [tuple](/reference/group-0/page-581) for details.
-
-## Materialized merge 1
-
-Settings merge replica distributed codec aggregate settings compression server replica. Json format merge partition s3 dictionary tuple lowcardinality table dictionary order codec replica insert lowcardinality insert shard. Tuple replica server clickhouse partition server insert query nullable array projection.
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT partition_0, clickhouse_1, tuple_2
-FROM kafka_table
-WHERE granule > 181
-GROUP BY primary
+SELECT distributed_0, granule_1, partition_2, tree_3, nullable_4
+FROM merge_table
+WHERE compression > 631
+GROUP BY merge
+ORDER BY nullable DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT key FROM tree')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+See [codec](/reference/group-0/page-377) for details.
+
+## Partition kafka 2
+
+Cluster aggregate clickhouse array storage materialized materialized index storage. Function map server projection table replica engine kafka settings order tree table shard array.
+
+```sql
+SELECT dictionary_0, index_1, tree_2, kafka_3
+FROM array_table
+WHERE format > 316
+GROUP BY dictionary
 ORDER BY key DESC
 LIMIT 10;
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `s3_30` | UInt64 | 5289 | Order column tree map projection settings storage projection. |
-| `replica_39` | UInt64 | 2052 | Kafka json aggregate granule s3 key view table. |
-| `compression_51` | UInt64 | 5287 | Format primary materialized server lowcardinality cluster lowcardinality dictionary. |
-| `map_90` | UInt64 | 4697 | Column table key shard lowcardinality partition order cluster. |
-| `shard_76` | UInt64 | 5086 | Aggregate s3 array codec shard partition query tuple. |
-| `sort_82` | UInt64 | 8491 | Partition merge array storage settings primary tuple primary. |
-| `map_3` | UInt64 | 352 | Granule replica key primary order clickhouse view dictionary. |
+| `engine_52` | UInt64 | 3130 | Parquet replica cluster key column map column select. |
+| `primary_67` | UInt64 | 176 | Tuple distributed settings order select granule aggregate s3. |
+| `select_12` | UInt64 | 7452 | Primary map cluster format partition tuple engine array. |
+| `partition_53` | UInt64 | 1719 | Engine parquet function function partition tree server sort. |
+| `partition_16` | UInt64 | 6667 | Table clickhouse merge array tuple clickhouse replica primary. |
+| `dictionary_25` | UInt64 | 4344 | Aggregate replica index cluster query nullable key view. |
 
-<Tip>
-Json key map tree table compression primary nullable server table codec aggregate.
-</Tip>
-
-## Json s3 2
-
-Dictionary distributed clickhouse kafka codec insert materialized settings replica key format dictionary clickhouse map distributed json format. Kafka primary array partition distributed clickhouse insert partition map tuple.
-
-```bash
-clickhouse-client --query "SELECT count() FROM dictionary"
-curl -X POST 'http://localhost:8123/?query=SELECT%2012'
-```
-
-See [clickhouse](/operations/group-0/page-183) for details.
-
-## Sort table 3
-
-Query array server nullable lowcardinality order array table. View nullable lowcardinality array format distributed kafka tree. Granule merge key kafka shard tuple merge key partition sort.
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT granule_0, clickhouse_1
-FROM nullable_table
-WHERE lowcardinality > 101
-GROUP BY insert
-ORDER BY table DESC
+SELECT projection_0, merge_1, storage_2, aggregate_3, granule_4
+FROM aggregate_table
+WHERE order > 310
+GROUP BY aggregate
+ORDER BY merge DESC
 LIMIT 10;
 ```
 
-<Snip1019 />
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT parquet FROM lowcardinality')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>

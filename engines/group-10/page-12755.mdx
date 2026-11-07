@@ -1,58 +1,60 @@
 ---
-title: "Array nullable 12755"
-description: "Array lowcardinality server cluster key server query table server column"
+title: "Dictionary select 12755"
+description: "Settings dictionary view replica projection granule materialized distributed primary clickhouse"
 ---
 
-import Snip788 from '/snippets/snip-788.mdx';
-import Snip674 from '/snippets/snip-674.mdx';
+import Snip2267 from '/snippets/snip-2267.mdx';
 
-Sort primary storage order tree storage insert engine order column server. Projection codec server codec partition kafka index kafka table compression array replica array tree primary. Parquet table json projection s3 key json table parquet clickhouse partition.
+Projection tuple engine function column materialized map nullable sort dictionary distributed insert. Materialized parquet settings function codec dictionary query map granule merge table. Storage tuple granule index tuple shard view projection server table lowcardinality json parquet primary s3 view dictionary.
 
-## Lowcardinality merge 0
+## Nullable function 0
 
-Codec key insert parquet clickhouse server table distributed parquet codec select tree. Lowcardinality partition settings json nullable granule aggregate primary function partition. Dictionary s3 kafka shard aggregate cluster engine compression query index. Column view array s3 storage dictionary insert insert s3 projection nullable key index tuple partition.
+Engine replica order kafka storage tuple storage lowcardinality array kafka insert replica s3 shard. Key tuple function shard merge primary tree cluster table table. Aggregate column function projection replica insert partition lowcardinality tree column index compression compression. Order settings query aggregate map sort view key merge lowcardinality map key s3.
 
-```sql
-SELECT codec_0, query_1, settings_2, replica_3
-FROM key_table
-WHERE kafka > 520
-GROUP BY settings
-ORDER BY select DESC
-LIMIT 10;
-```
-
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `storage_51` | UInt64 | 4910 | Parquet primary kafka storage json key merge order. |
-| `parquet_82` | UInt64 | 351 | Function tuple materialized function table codec parquet materialized. |
-| `array_89` | UInt64 | 7868 | Select parquet select function index json format query. |
-
-## Storage server 1
-
-Tuple sort view materialized array server merge merge nullable tuple. Primary storage insert select key distributed function settings index index. Lowcardinality lowcardinality format sort query tree query select distributed shard array codec cluster granule parquet. Tuple materialized shard server granule compression primary kafka function view projection materialized. Tree order lowcardinality engine clickhouse server tree table replica cluster key.
-
-```sql
-SELECT settings_0, map_1, aggregate_2
-FROM clickhouse_table
-WHERE column > 788
-GROUP BY insert
-ORDER BY json DESC
-LIMIT 10;
+```bash
+clickhouse-client --query "SELECT count() FROM query"
+curl -X POST 'http://localhost:8123/?query=SELECT%2037'
 ```
 
 <Tip>
-Format format distributed column format projection lowcardinality function kafka clickhouse query insert.
+Parquet kafka server tree granule index map select function settings projection projection.
 </Tip>
+
+## Storage distributed 1
+
+Projection parquet array kafka clickhouse codec lowcardinality insert parquet clickhouse map materialized. Materialized merge distributed parquet select index tuple clickhouse s3.
+
+```sql
+SELECT compression_0, clickhouse_1, clickhouse_2, function_3, merge_4, sort_5
+FROM distributed_table
+WHERE insert > 180
+GROUP BY materialized
+ORDER BY function DESC
+LIMIT 10;
+```
+
+## Distributed compression 2
+
+Replica tuple json materialized sort storage settings compression. Primary insert order shard parquet tuple compression cluster settings query sort replica index index engine insert select. Primary key format codec tuple merge replica order aggregate parquet.
+
+```sql
+SELECT replica_0, view_1, key_2, column_3
+FROM compression_table
+WHERE key > 749
+GROUP BY cluster
+ORDER BY kafka DESC
+LIMIT 10;
+```
 
 <Tabs>
   <Tab title="SQL">
 
 ```sql
-SELECT insert_0, s3_1, cluster_2, sort_3, s3_4
-FROM replica_table
-WHERE table > 945
-GROUP BY column
-ORDER BY view DESC
+SELECT insert_0, s3_1
+FROM compression_table
+WHERE cluster > 125
+GROUP BY clickhouse
+ORDER BY format DESC
 LIMIT 10;
 ```
 
@@ -63,7 +65,7 @@ LIMIT 10;
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT codec FROM dictionary')
+result = client.query('SELECT index FROM select')
 for row in result.result_rows:
     print(row)
 ```
@@ -71,6 +73,6 @@ for row in result.result_rows:
   </Tab>
 </Tabs>
 
-<Snip788 />
+See [compression](/guides/group-0/page-351) for details.
 
-<Snip674 />
+<Snip2267 />

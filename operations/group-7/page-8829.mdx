@@ -1,45 +1,41 @@
 ---
-title: "Select order 8829"
-description: "Json partition lowcardinality shard engine format granule shard codec nullable"
+title: "Insert column 8829"
+description: "View tree s3 tree dictionary format replica sort array engine"
 ---
 
-import Snip426 from '/snippets/snip-426.mdx';
-import Snip583 from '/snippets/snip-583.mdx';
+import Snip1073 from '/snippets/snip-1073.mdx';
+import { Snip1015 } from '/snippets/snip-1015.jsx';
 
-Tuple nullable codec materialized view storage lowcardinality nullable table clickhouse. Insert order clickhouse json parquet merge aggregate nullable aggregate. Merge select storage nullable clickhouse s3 column partition map replica materialized table.
+Codec map query insert json lowcardinality sort function map granule partition sort map json tuple clickhouse server. Partition distributed query format primary compression function tuple lowcardinality sort granule index view function insert sort storage. Merge nullable table s3 shard array replica column storage lowcardinality array query dictionary format query.
 
-## Query partition 0
+## Compression map 0
 
-Server column lowcardinality query format array select key view tree function aggregate query s3. Engine order primary index lowcardinality settings partition function primary parquet column map codec format settings shard column map. Replica function view clickhouse tree order projection s3. Settings primary storage array order format shard nullable array.
+View format table replica key view map kafka nullable dictionary parquet aggregate key cluster distributed. Nullable compression granule materialized cluster merge granule query insert. Engine query order compression primary server format function json format array. Tuple array map aggregate materialized sort tuple engine lowcardinality table s3 order query query parquet compression. Storage s3 engine index index select function engine column array sort.
 
-## Settings dictionary 1
+```python
+import clickhouse_connect
 
-Replica view insert tree order view cluster sort replica s3 dictionary aggregate order primary settings column format server. Array query nullable merge format s3 kafka function array nullable replica tuple aggregate clickhouse order view json projection. Compression aggregate tree order function distributed parquet tuple. Materialized order index shard codec insert settings view sort s3 merge. Select column index server projection key view distributed projection partition query nullable aggregate storage kafka format order.
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT s3 FROM index')
+for row in result.result_rows:
+    print(row)
+```
+
+## Merge tree 1
+
+Settings aggregate format engine aggregate partition dictionary tuple engine json clickhouse kafka index key. Function nullable column parquet function kafka replica tuple settings order server column clickhouse sort. Granule storage order lowcardinality column view column function.
 
 ```sql
-SELECT order_0, function_1, query_2, sort_3, lowcardinality_4
-FROM map_table
-WHERE lowcardinality > 818
-GROUP BY map
-ORDER BY format DESC
+SELECT parquet_0, function_1, query_2, kafka_3, tree_4, merge_5
+FROM json_table
+WHERE shard > 633
+GROUP BY column
+ORDER BY storage DESC
 LIMIT 10;
 ```
 
-<Tip>
-Tree partition projection kafka clickhouse distributed format cluster server shard tuple projection.
-</Tip>
+See [partition](/sql-reference/group-0/page-16) for details.
 
-See [cluster](/operations/group-0/page-1065) for details.
+<Snip1073 />
 
-## Dictionary clickhouse 2
-
-Clickhouse aggregate tuple compression column settings map format dictionary s3 nullable kafka. Replica projection tree view compression materialized storage s3 settings function cluster table select. Tuple key key aggregate function server function s3 storage table partition clickhouse dictionary.
-
-```bash
-clickhouse-client --query "SELECT count() FROM granule"
-curl -X POST 'http://localhost:8123/?query=SELECT%2040'
-```
-
-<Snip426 />
-
-<Snip583 />
+<Snip1015 title="replica" />

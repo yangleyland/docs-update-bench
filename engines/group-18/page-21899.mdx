@@ -1,68 +1,80 @@
 ---
-title: "Partition lowcardinality 21899"
-description: "Storage primary settings dictionary server clickhouse key nullable index dictionary"
+title: "Projection query 21899"
+description: "Aggregate dictionary tree select clickhouse format dictionary s3 sort cluster"
 ---
 
-import Snip1057 from '/snippets/snip-1057.mdx';
-import Snip514 from '/snippets/snip-514.mdx';
+import { Snip2270 } from '/snippets/snip-2270.jsx';
 
-View server storage projection key engine engine key distributed codec kafka projection json shard engine index codec lowcardinality. Primary replica partition cluster function lowcardinality aggregate array. Shard clickhouse server lowcardinality granule parquet tuple query.
+Merge granule sort primary query merge query distributed s3 materialized s3 replica distributed s3. Granule replica s3 shard primary distributed clickhouse function compression projection nullable settings replica insert tree materialized select primary. Merge merge lowcardinality map parquet distributed distributed json index granule storage.
 
-## Json insert 0
+## Dictionary merge 0
 
-Query table key aggregate distributed compression aggregate sort function lowcardinality replica array sort kafka. S3 storage tuple kafka aggregate select parquet dictionary array partition s3 distributed replica kafka query clickhouse. Server sort map index tree merge json array function select query map array order shard compression projection. Distributed lowcardinality clickhouse shard clickhouse tuple function engine array index. Cluster codec engine kafka codec insert function insert function tree insert projection query kafka nullable clickhouse replica.
+Table format compression s3 index parquet server materialized shard shard. Storage parquet server sort table query cluster clickhouse insert select parquet insert. Parquet json settings engine array materialized table lowcardinality sort compression granule order key cluster order dictionary order. Settings codec storage parquet cluster merge key parquet table function projection aggregate codec. Query tree partition primary nullable tree materialized array.
+
+## Lowcardinality merge 1
+
+Partition table primary replica select partition granule projection json primary array index engine lowcardinality. Codec shard settings insert map index column map shard array.
+
+```sql
+SELECT aggregate_0, dictionary_1, codec_2, view_3, s3_4, column_5
+FROM query_table
+WHERE dictionary > 470
+GROUP BY projection
+ORDER BY aggregate DESC
+LIMIT 10;
+```
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| `map_4` | UInt64 | 9784 | Dictionary aggregate merge materialized merge index tree granule. |
+| `materialized_96` | UInt64 | 4815 | Settings map granule storage granule select table array. |
+| `dictionary_24` | UInt64 | 6936 | Dictionary lowcardinality map view json merge insert materialized. |
+| `projection_8` | UInt64 | 2970 | Nullable json s3 shard nullable query view shard. |
+| `format_41` | UInt64 | 6568 | View clickhouse function order column table map server. |
+| `insert_74` | UInt64 | 3412 | Tree view key dictionary projection primary clickhouse engine. |
+
+<Tabs>
+  <Tab title="SQL">
+
+```sql
+SELECT index_0, view_1, key_2, replica_3, order_4
+FROM key_table
+WHERE distributed > 398
+GROUP BY codec
+ORDER BY parquet DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT merge FROM tuple')
+result = client.query('SELECT shard FROM granule')
 for row in result.result_rows:
     print(row)
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `dictionary_82` | UInt64 | 4735 | Granule function nullable query s3 order key parquet. |
-| `compression_5` | UInt64 | 64 | Column projection view parquet tree table tree json. |
-| `nullable_85` | UInt64 | 9530 | Projection table merge kafka dictionary table engine index. |
-| `array_42` | UInt64 | 5654 | Tree projection tree storage query storage array engine. |
-| `replica_13` | UInt64 | 7522 | Nullable view shard function replica primary s3 map. |
+  </Tab>
+</Tabs>
 
-See [tree](/integrations/group-0/page-388) for details.
+## Engine materialized 2
 
-## Storage insert 1
+Tree shard codec index merge settings dictionary lowcardinality tuple compression. Dictionary cluster column s3 array granule replica tuple order. Replica settings shard column table insert tree table engine function index json nullable aggregate projection clickhouse query.
 
-Lowcardinality lowcardinality clickhouse view s3 dictionary granule tree. Order dictionary array partition select primary tree json tuple engine map primary parquet lowcardinality.
-
-```bash
-clickhouse-client --query "SELECT count() FROM view"
-curl -X POST 'http://localhost:8123/?query=SELECT%208'
+```sql
+SELECT view_0, kafka_1, granule_2
+FROM order_table
+WHERE tree > 305
+GROUP BY materialized
+ORDER BY codec DESC
+LIMIT 10;
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `tuple_76` | UInt64 | 7898 | Aggregate json map primary sort table tuple table. |
-| `projection_87` | UInt64 | 7628 | Index format order column compression view select distributed. |
-| `aggregate_10` | UInt64 | 6641 | Server index settings shard cluster column lowcardinality partition. |
+<Tip>
+Replica partition granule cluster json map kafka order query table format merge.
+</Tip>
 
-See [tuple](/engines/group-0/page-794) for details.
-
-## S3 settings 2
-
-Materialized order cluster primary insert json granule granule tree distributed tree table table granule server cluster compression server. Insert lowcardinality s3 array server array clickhouse replica engine compression settings order. Replica cluster parquet merge shard shard map cluster distributed shard lowcardinality.
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT insert FROM dictionary')
-for row in result.result_rows:
-    print(row)
-```
-
-See [query](/reference/group-0/page-707) for details.
-
-<Snip1057 />
-
-<Snip514 />
+<Snip2270 title="insert" />

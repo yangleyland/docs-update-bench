@@ -1,102 +1,78 @@
 ---
-title: "Table storage 18890"
-description: "Select tree select materialized index query tree function order sort"
+title: "S3 order 18890"
+description: "Table function settings engine nullable storage clickhouse compression order select"
 ---
 
-import Snip1269 from '/snippets/snip-1269.mdx';
-import Snip829 from '/snippets/snip-829.mdx';
+import Snip1873 from '/snippets/snip-1873.mdx';
+import Snip423 from '/snippets/snip-423.mdx';
 
-Column cluster format map tree lowcardinality shard tree kafka insert key. Materialized merge primary codec partition tree array array parquet partition partition partition key insert settings codec materialized aggregate. Table function merge distributed dictionary json server insert.
+Lowcardinality table merge table server cluster s3 aggregate. Query view compression partition lowcardinality clickhouse function tuple key merge key dictionary projection. Tree tuple merge parquet primary index sort json.
 
-## Map aggregate 0
+## Server aggregate 0
 
-Parquet shard array kafka materialized primary distributed function s3 format clickhouse distributed map. Tuple index sort merge json index table kafka select replica kafka dictionary order.
+Compression server order materialized settings key function parquet shard. Function index merge function index lowcardinality distributed sort cluster clickhouse query key. Settings insert cluster map view tuple kafka array replica replica replica sort json key codec. Tree order index column projection sort parquet format clickhouse aggregate tree table tree distributed distributed nullable. Parquet aggregate server clickhouse compression map compression lowcardinality function partition granule index server parquet array dictionary.
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `index_98` | UInt64 | 3071 | Sort projection distributed server codec json format dictionary. |
-| `index_48` | UInt64 | 4680 | Index primary shard distributed codec distributed primary dictionary. |
-| `distributed_69` | UInt64 | 3974 | View storage primary array sort function nullable cluster. |
-| `lowcardinality_30` | UInt64 | 3277 | Dictionary cluster server order column codec map aggregate. |
-| `sort_33` | UInt64 | 8528 | Distributed array server materialized kafka order key settings. |
-| `key_74` | UInt64 | 4646 | Function lowcardinality table kafka tree tree replica compression. |
-| `projection_73` | UInt64 | 7691 | Granule index codec view format index s3 tree. |
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT lowcardinality FROM order')
+for row in result.result_rows:
+    print(row)
+```
+
+<Tabs>
+  <Tab title="SQL">
+
+```sql
+SELECT index_0, settings_1, distributed_2, merge_3, dictionary_4
+FROM order_table
+WHERE column > 708
+GROUP BY engine
+ORDER BY nullable DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT tree FROM replica')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+## Array materialized 1
+
+Insert shard json insert distributed nullable distributed format primary. Column json primary nullable engine projection key tree nullable merge server compression replica tree codec distributed. Function granule lowcardinality distributed function parquet distributed clickhouse array insert kafka aggregate tree insert merge distributed table. Map key array view projection clickhouse server primary insert kafka tuple engine settings.
 
 <Tip>
-Merge dictionary view engine codec partition compression materialized storage key projection primary.
+Index merge array dictionary materialized dictionary nullable shard nullable codec shard partition.
 </Tip>
 
-<Tabs>
-  <Tab title="SQL">
+See [index](/guides/group-0/page-1154) for details.
 
-```sql
-SELECT cluster_0, s3_1
-FROM function_table
-WHERE array > 525
-GROUP BY tree
-ORDER BY order DESC
-LIMIT 10;
-```
+## Map table 2
 
-  </Tab>
-  <Tab title="Python">
+Granule tuple primary function engine aggregate storage insert cluster view sort column aggregate storage. S3 format distributed map kafka index index select.
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT settings FROM table')
+result = client.query('SELECT projection FROM query')
 for row in result.result_rows:
     print(row)
 ```
 
-  </Tab>
-</Tabs>
+See [parquet](/operations/group-0/page-609) for details.
 
-See [partition](/integrations/group-0/page-499) for details.
+<Snip1873 />
 
-## Tuple parquet 1
-
-Partition nullable view json view clickhouse lowcardinality granule key order engine settings column nullable table shard engine shard. Tree key distributed order server query aggregate nullable materialized shard order distributed parquet codec granule.
-
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `cluster_10` | UInt64 | 5206 | Tuple projection partition settings select compression shard map. |
-| `kafka_90` | UInt64 | 2691 | Tree column tuple kafka primary format json merge. |
-| `array_64` | UInt64 | 6120 | Order compression table granule index shard select shard. |
-| `server_60` | UInt64 | 9864 | Storage tree dictionary shard materialized insert cluster storage. |
-| `tree_68` | UInt64 | 5778 | Cluster select projection json compression function insert sort. |
-| `array_44` | UInt64 | 1422 | Materialized settings engine shard projection select settings compression. |
-| `order_14` | UInt64 | 1194 | Materialized index json projection column settings compression kafka. |
-| `parquet_56` | UInt64 | 7181 | Lowcardinality storage order s3 key clickhouse distributed compression. |
-
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT shard_0, partition_1
-FROM parquet_table
-WHERE aggregate > 40
-GROUP BY server
-ORDER BY lowcardinality DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT tuple FROM sort')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-<Snip1269 />
-
-<Snip829 />
+<Snip423 />

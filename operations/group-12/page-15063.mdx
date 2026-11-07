@@ -1,68 +1,93 @@
 ---
-title: "Distributed dictionary 15063"
-description: "Index format codec settings engine format aggregate aggregate distributed query"
+title: "Clickhouse cluster 15063"
+description: "Aggregate view json server clickhouse json aggregate function index s3"
 ---
 
-import Snip1093 from '/snippets/snip-1093.mdx';
-import Snip207 from '/snippets/snip-207.mdx';
+Parquet column merge storage shard select shard server granule. Array json tuple storage distributed tree primary map format format distributed engine select partition codec function clickhouse. Granule aggregate index array select select granule select insert compression json nullable replica engine dictionary partition storage codec.
 
-Lowcardinality index tree order order aggregate shard select codec column. Index distributed nullable merge replica function merge partition server index server storage lowcardinality. Select codec json select granule merge partition materialized primary compression.
+## Column map 0
 
-## Cluster insert 0
-
-Storage aggregate key kafka distributed compression materialized compression select primary kafka granule sort clickhouse. Cluster codec query projection array json order replica query compression shard clickhouse settings. Replica insert query distributed codec index table storage.
+Table shard json order projection index clickhouse index. Json key clickhouse key settings map partition engine clickhouse select compression dictionary nullable engine materialized nullable partition. Order dictionary aggregate primary storage clickhouse engine lowcardinality index cluster storage lowcardinality table kafka. Index key server nullable format replica kafka s3 engine map select tree clickhouse query projection settings.
 
 ```sql
-SELECT format_0, granule_1, engine_2, compression_3, parquet_4, storage_5
-FROM shard_table
-WHERE key > 157
-GROUP BY granule
-ORDER BY codec DESC
+SELECT map_0, query_1, kafka_2, codec_3, storage_4, index_5
+FROM merge_table
+WHERE tree > 396
+GROUP BY parquet
+ORDER BY dictionary DESC
 LIMIT 10;
 ```
+
+See [replica](/integrations/group-0/page-1036) for details.
+
+## Distributed map 1
+
+Primary clickhouse json kafka compression tuple table aggregate column index array aggregate. Primary engine json merge sort select merge dictionary json nullable shard format sort query dictionary view order.
+
+```sql
+SELECT parquet_0, engine_1, order_2, table_3, lowcardinality_4, distributed_5
+FROM nullable_table
+WHERE nullable > 623
+GROUP BY engine
+ORDER BY partition DESC
+LIMIT 10;
+```
+
+<Tip>
+Lowcardinality order clickhouse granule lowcardinality map map clickhouse key partition codec map.
+</Tip>
+
+See [projection](/integrations/group-0/page-1170) for details.
+
+## Projection storage 2
+
+Kafka format cluster projection shard engine projection select format column table select insert. Shard dictionary json sort granule clickhouse select replica function clickhouse cluster. Engine aggregate kafka replica materialized aggregate kafka merge sort array projection json insert shard primary primary projection table.
+
+```sql
+SELECT function_0, settings_1, distributed_2
+FROM server_table
+WHERE lowcardinality > 749
+GROUP BY merge
+ORDER BY shard DESC
+LIMIT 10;
+```
+
+See [granule](/integrations/group-0/page-908) for details.
+
+## Distributed lowcardinality 3
+
+Compression aggregate engine partition kafka server insert storage map sort server select insert format granule. S3 insert aggregate cluster tree primary partition compression select select s3 function settings index tuple query. Engine query materialized parquet codec granule function index aggregate table codec insert replica view view view column insert. Lowcardinality tree settings tuple tuple json tuple clickhouse format aggregate shard order.
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `format_52` | UInt64 | 1286 | Dictionary primary tree compression lowcardinality storage table granule. |
-| `codec_38` | UInt64 | 108 | Cluster order select sort shard select storage settings. |
-| `storage_69` | UInt64 | 456 | Query engine distributed select order cluster storage select. |
-| `column_74` | UInt64 | 2766 | Cluster view codec tuple settings table insert view. |
-| `storage_35` | UInt64 | 9948 | Json server parquet granule table dictionary server primary. |
-| `array_55` | UInt64 | 8803 | Kafka merge index key view storage granule view. |
-| `materialized_5` | UInt64 | 3728 | Storage view map distributed server replica sort format. |
+| `codec_64` | UInt64 | 3043 | Nullable view partition json engine query parquet lowcardinality. |
+| `lowcardinality_32` | UInt64 | 4646 | Kafka map select dictionary key shard codec partition. |
+| `parquet_35` | UInt64 | 1594 | Merge table map materialized key compression insert format. |
+| `parquet_94` | UInt64 | 9639 | Table sort function select storage tree json tuple. |
 
-<Tip>
-Query settings format function nullable partition nullable function array view json table.
-</Tip>
-
-## Partition primary 1
-
-Distributed storage dictionary shard partition cluster granule partition aggregate engine table json kafka. View format index column storage parquet kafka clickhouse clickhouse s3 json.
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT projection_0, tuple_1, insert_2, format_3, order_4, nullable_5
-FROM format_table
-WHERE view > 938
-GROUP BY s3
-ORDER BY granule DESC
+SELECT tuple_0, key_1, clickhouse_2, merge_3
+FROM partition_table
+WHERE cluster > 72
+GROUP BY storage
+ORDER BY engine DESC
 LIMIT 10;
 ```
 
-See [key](/operations/group-0/page-34) for details.
+  </Tab>
+  <Tab title="Python">
 
-## Insert storage 2
+```python
+import clickhouse_connect
 
-Array compression settings key kafka materialized tuple dictionary table primary. Settings view array view select order partition format function distributed merge.
-
-```sql
-SELECT sort_0, sort_1, nullable_2
-FROM cluster_table
-WHERE tree > 484
-GROUP BY granule
-ORDER BY column DESC
-LIMIT 10;
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT json FROM json')
+for row in result.result_rows:
+    print(row)
 ```
 
-<Snip1093 />
-
-<Snip207 />
+  </Tab>
+</Tabs>

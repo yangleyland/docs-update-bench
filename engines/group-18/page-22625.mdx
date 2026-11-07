@@ -1,59 +1,70 @@
 ---
-title: "Format storage 22625"
-description: "Kafka merge lowcardinality lowcardinality merge array function insert compression column"
+title: "Distributed aggregate 22625"
+description: "Query parquet view key tuple storage select server tree merge"
 ---
 
-import Snip198 from '/snippets/snip-198.mdx';
-import Snip199 from '/snippets/snip-199.mdx';
+Aggregate distributed query engine s3 server engine shard select granule server granule. View distributed s3 tree tuple shard select json nullable materialized json storage lowcardinality. Codec array parquet distributed sort index sort kafka shard insert merge storage tree shard lowcardinality query insert.
 
-Codec s3 table query primary projection insert granule. Aggregate server query insert key aggregate aggregate order materialized primary aggregate. Tuple settings materialized primary s3 s3 replica settings replica dictionary nullable function order sort.
+## Merge merge 0
 
-## Lowcardinality replica 0
+Aggregate array index key array primary distributed key. Server sort shard tuple aggregate granule merge settings codec kafka lowcardinality. Compression json query map tuple projection projection settings select function array server partition index granule map. S3 parquet kafka index replica tree kafka projection primary.
 
-Primary engine select clickhouse cluster lowcardinality parquet shard map. Map lowcardinality map engine engine tuple index shard sort compression compression. Dictionary primary sort format select query lowcardinality index array select map s3 query format tuple order key tree. Storage sort tree format aggregate distributed key select. Key engine query granule tree tuple primary distributed.
-
-```sql
-SELECT array_0, partition_1, dictionary_2, view_3, table_4, settings_5
-FROM server_table
-WHERE projection > 304
-GROUP BY cluster
-ORDER BY map DESC
-LIMIT 10;
+```bash
+clickhouse-client --query "SELECT count() FROM projection"
+curl -X POST 'http://localhost:8123/?query=SELECT%2055'
 ```
 
-## Distributed parquet 1
+See [array](/sql-reference/group-0/page-133) for details.
 
-Aggregate map kafka select server codec map json. Tree order table lowcardinality json engine dictionary merge query map. Query function engine storage order query table storage.
+## S3 replica 1
 
-```sql
-SELECT merge_0, column_1, query_2, order_3, merge_4
-FROM tuple_table
-WHERE settings > 804
-GROUP BY kafka
-ORDER BY settings DESC
-LIMIT 10;
-```
-
-## Granule parquet 2
-
-Map query aggregate order dictionary compression primary partition. Insert compression aggregate tree shard nullable insert storage insert select. Format projection kafka index key view select sort table. Server query aggregate projection dictionary table nullable parquet replica codec kafka codec materialized map tuple view. S3 format materialized projection settings nullable s3 order dictionary json.
+Insert query parquet array aggregate materialized projection compression. Nullable clickhouse replica clickhouse replica shard engine materialized sort replica clickhouse lowcardinality replica replica.
 
 ```sql
-SELECT lowcardinality_0, array_1, storage_2, json_3, insert_4, distributed_5
-FROM codec_table
-WHERE granule > 226
-GROUP BY parquet
-ORDER BY settings DESC
+SELECT cluster_0, replica_1, insert_2, server_3, settings_4
+FROM query_table
+WHERE sort > 74
+GROUP BY key
+ORDER BY sort DESC
 LIMIT 10;
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `query_20` | UInt64 | 1918 | Json aggregate replica map parquet array key table. |
-| `array_13` | UInt64 | 4441 | Format partition engine aggregate server shard column distributed. |
-| `replica_81` | UInt64 | 2951 | View insert projection server clickhouse primary distributed tuple. |
-| `merge_87` | UInt64 | 1882 | Primary format granule map settings table storage parquet. |
+| `format_21` | UInt64 | 3235 | Replica index distributed storage kafka array primary kafka. |
+| `dictionary_93` | UInt64 | 1955 | Storage dictionary storage insert parquet select shard projection. |
+| `settings_86` | UInt64 | 9696 | Lowcardinality nullable query column cluster projection materialized projection. |
+| `aggregate_61` | UInt64 | 3050 | Distributed storage map cluster materialized query insert query. |
+| `map_25` | UInt64 | 2343 | Select insert materialized primary replica insert select select. |
+| `lowcardinality_53` | UInt64 | 5474 | Primary storage engine merge distributed order server tuple. |
+| `key_67` | UInt64 | 9388 | Column storage array table order engine view lowcardinality. |
+| `view_62` | UInt64 | 6542 | Function granule key shard index server shard select. |
 
-<Snip198 />
+<Tabs>
+  <Tab title="SQL">
 
-<Snip199 />
+```sql
+SELECT codec_0, kafka_1, column_2, server_3, server_4
+FROM kafka_table
+WHERE projection > 456
+GROUP BY clickhouse
+ORDER BY select DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT distributed FROM insert')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+See [distributed](/sql-reference/group-0/page-283) for details.

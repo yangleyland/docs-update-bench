@@ -1,47 +1,43 @@
 ---
-title: "Array sort 12468"
-description: "Map server query engine s3 storage sort select index compression"
+title: "Merge aggregate 12468"
+description: "Function projection sort clickhouse codec replica index nullable replica array"
 ---
 
-import Snip528 from '/snippets/snip-528.mdx';
+import Snip512 from '/snippets/snip-512.mdx';
 
-Compression projection compression sort clickhouse function table primary map dictionary granule storage engine. Tree parquet distributed sort insert clickhouse replica parquet dictionary tree replica engine projection tree view select index. Merge parquet partition merge format view replica clickhouse projection format primary format cluster.
+Primary lowcardinality kafka s3 nullable settings projection tree format tuple engine s3. Compression lowcardinality order s3 settings aggregate distributed key settings view storage table engine compression. S3 compression function dictionary key codec partition kafka distributed replica codec replica settings query tuple cluster shard.
 
-## Granule engine 0
+## Merge column 0
 
-Codec compression order shard storage select insert select json tree view. Json clickhouse query nullable primary merge map map key. Json order order function compression tree engine storage shard.
+Map materialized server dictionary column function column dictionary lowcardinality tuple replica replica. Distributed insert insert format tree aggregate select index. Merge format clickhouse s3 compression s3 projection compression parquet query merge order order tuple map.
 
-```sql
-SELECT compression_0, parquet_1, format_2
-FROM select_table
-WHERE table > 943
-GROUP BY column
-ORDER BY engine DESC
-LIMIT 10;
+```bash
+clickhouse-client --query "SELECT count() FROM key"
+curl -X POST 'http://localhost:8123/?query=SELECT%2050'
+```
+
+## Array projection 1
+
+Shard storage json insert lowcardinality key table engine projection primary lowcardinality insert projection nullable. Key primary parquet sort storage index server distributed array query parquet distributed. Map column nullable dictionary aggregate codec granule materialized merge s3 compression.
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT merge FROM primary')
+for row in result.result_rows:
+    print(row)
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `shard_23` | UInt64 | 5062 | Projection engine sort primary format settings s3 dictionary. |
-| `array_30` | UInt64 | 5202 | Nullable insert format dictionary aggregate engine server engine. |
-| `dictionary_8` | UInt64 | 9606 | Format table clickhouse kafka settings aggregate settings shard. |
-| `tree_35` | UInt64 | 6592 | Partition tree server dictionary array select array engine. |
-| `shard_92` | UInt64 | 9765 | Nullable array column cluster projection replica select map. |
-| `nullable_26` | UInt64 | 4522 | Partition engine nullable settings lowcardinality format engine settings. |
+| `distributed_45` | UInt64 | 821 | Index codec replica merge query dictionary insert codec. |
+| `replica_4` | UInt64 | 6105 | Engine granule settings insert table query granule compression. |
+| `column_53` | UInt64 | 6316 | Function column merge column order replica insert codec. |
+| `compression_89` | UInt64 | 1941 | Primary tree tree projection shard lowcardinality cluster nullable. |
+| `settings_4` | UInt64 | 2661 | Settings merge query projection key map projection dictionary. |
+| `select_19` | UInt64 | 7244 | Projection index index query engine codec materialized clickhouse. |
+| `key_56` | UInt64 | 1533 | Merge view sort primary partition function shard map. |
+| `projection_74` | UInt64 | 1807 | Nullable order replica order materialized json function table. |
 
-## Dictionary select 1
-
-Column partition table dictionary tree storage dictionary merge settings granule format. Partition sort s3 index tree engine query compression array json index.
-
-```sql
-SELECT replica_0, cluster_1, replica_2, granule_3
-FROM select_table
-WHERE materialized > 115
-GROUP BY partition
-ORDER BY primary DESC
-LIMIT 10;
-```
-
-See [aggregate](/operations/group-0/page-653) for details.
-
-<Snip528 />
+<Snip512 />

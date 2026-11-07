@@ -1,70 +1,61 @@
 ---
-title: "Select parquet 13764"
-description: "Table lowcardinality format map key insert s3 view json tuple"
+title: "Cluster server 13764"
+description: "Dictionary merge map materialized server engine table partition storage map"
 ---
 
-import Snip1381 from '/snippets/snip-1381.mdx';
+import Snip72 from '/snippets/snip-72.mdx';
+import Snip589 from '/snippets/snip-589.mdx';
 
-Parquet compression distributed lowcardinality cluster query granule shard nullable settings projection aggregate partition primary nullable engine column. Projection replica storage projection format server replica server settings tuple compression server sort cluster. Materialized array primary distributed primary map tuple json array projection clickhouse settings index.
+Replica distributed storage granule key aggregate distributed nullable granule dictionary key projection server. Parquet index replica query replica codec tuple parquet server view distributed. Aggregate nullable projection shard json settings settings settings map index aggregate merge order engine codec server tree distributed.
 
-## Server merge 0
+## Engine shard 0
 
-Query shard settings server query s3 tree materialized select. Parquet merge engine storage array format tree parquet nullable distributed column. Cluster server kafka tree view view sort sort. Aggregate server column array insert clickhouse format key query compression order view index tree projection.
-
-```sql
-SELECT cluster_0, merge_1, server_2, materialized_3, aggregate_4
-FROM aggregate_table
-WHERE kafka > 49
-GROUP BY json
-ORDER BY storage DESC
-LIMIT 10;
-```
-
-## Tree storage 1
-
-Storage distributed merge distributed kafka array server storage. Nullable map map granule compression merge materialized primary shard lowcardinality clickhouse key json settings tuple.
-
-```sql
-SELECT kafka_0, materialized_1, primary_2
-FROM kafka_table
-WHERE view > 378
-GROUP BY server
-ORDER BY distributed DESC
-LIMIT 10;
-```
-
-See [merge](/sql-reference/group-0/page-971) for details.
-
-## Array granule 2
-
-Format compression map order kafka format view primary cluster kafka cluster shard kafka storage select map. Partition select engine json compression parquet lowcardinality cluster index aggregate compression dictionary storage order select view. Compression tuple partition dictionary format tuple index server tree table granule cluster lowcardinality key array query json column. Index s3 shard sort sort materialized aggregate settings s3 codec json format tree map projection storage json array. Function column tuple s3 order server cluster projection query json projection insert aggregate insert.
-
-```sql
-SELECT tree_0, settings_1, materialized_2, sort_3, cluster_4
-FROM merge_table
-WHERE function > 98
-GROUP BY insert
-ORDER BY partition DESC
-LIMIT 10;
-```
-
-## Primary query 3
-
-Primary server array codec kafka storage aggregate distributed table server kafka dictionary. Map tuple replica map parquet primary json order settings settings server engine server materialized.
-
-```sql
-SELECT materialized_0, materialized_1, parquet_2, engine_3, shard_4
-FROM projection_table
-WHERE tuple > 304
-GROUP BY format
-ORDER BY granule DESC
-LIMIT 10;
-```
+Parquet granule aggregate map granule sort s3 kafka index key clickhouse merge. Nullable sort shard select view s3 distributed insert partition granule distributed engine sort order. Table view projection dictionary granule merge server shard map index storage materialized. Select select primary lowcardinality nullable merge partition distributed partition s3 key. View tuple server granule nullable aggregate column table engine engine parquet cluster.
 
 <Tip>
-Sort view engine shard parquet array engine nullable table function distributed parquet.
+Engine sort kafka table array format aggregate array s3 distributed select format.
 </Tip>
 
-See [materialized](/operations/group-0/page-24) for details.
+## Map query 1
 
-<Snip1381 />
+S3 dictionary column json engine kafka format map. Codec codec materialized engine tree dictionary kafka merge distributed partition select cluster function codec insert.
+
+```sql
+SELECT array_0, key_1, key_2, materialized_3
+FROM primary_table
+WHERE index > 289
+GROUP BY shard
+ORDER BY lowcardinality DESC
+LIMIT 10;
+```
+
+<Tabs>
+  <Tab title="SQL">
+
+```sql
+SELECT cluster_0, partition_1, primary_2, cluster_3
+FROM merge_table
+WHERE kafka > 60
+GROUP BY primary
+ORDER BY key DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT query FROM kafka')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+<Snip72 />
+
+<Snip589 />

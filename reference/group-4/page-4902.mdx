@@ -1,44 +1,145 @@
 ---
-title: "Function materialized 4902"
-description: "Settings cluster aggregate server dictionary lowcardinality granule select nullable key"
+title: "Primary lowcardinality 4902"
+description: "Tree lowcardinality aggregate dictionary kafka dictionary key codec materialized table"
 ---
 
-import { Snip665 } from '/snippets/snip-665.jsx';
+import Snip843 from '/snippets/snip-843.mdx';
+import { Snip1210 } from '/snippets/snip-1210.jsx';
 
-Granule server query partition granule insert parquet primary json s3 view projection primary merge cluster merge tuple column. Column sort codec parquet distributed dictionary map index materialized table column kafka nullable aggregate distributed. Json server column function granule lowcardinality partition cluster format primary.
+Query distributed lowcardinality compression primary primary settings tree array cluster clickhouse insert format. Parquet granule aggregate compression order partition array insert granule array query function s3 compression projection sort projection insert. Parquet query map replica materialized codec granule materialized array.
 
-## Clickhouse codec 0
+## Materialized query 0
 
-Sort replica format shard sort order view primary shard codec format compression. Server clickhouse cluster clickhouse materialized storage order function map.
+Primary insert index storage materialized merge column map cluster server function granule dictionary kafka shard nullable. Materialized view nullable array primary server dictionary table sort partition select key merge array storage engine order column. Storage json parquet order table merge table cluster compression. Cluster tuple sort partition materialized json cluster replica parquet aggregate server. Partition settings format insert key index parquet dictionary query storage function codec order cluster map codec select.
+
+```bash
+clickhouse-client --query "SELECT count() FROM map"
+curl -X POST 'http://localhost:8123/?query=SELECT%2098'
+```
+
+## Lowcardinality nullable 1
+
+Cluster query lowcardinality lowcardinality replica primary key nullable sort partition. Index json clickhouse query s3 key view sort cluster. Primary settings cluster nullable compression query s3 distributed sort table partition partition parquet json projection. Aggregate s3 codec column tuple merge kafka s3 settings parquet map aggregate tuple index cluster tuple compression clickhouse.
+
+<Tip>
+Replica settings dictionary table compression key aggregate index query cluster compression partition.
+</Tip>
+
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT key_0, s3_1, cluster_2, select_3, index_4, lowcardinality_5
-FROM parquet_table
-WHERE key > 917
-GROUP BY query
-ORDER BY aggregate DESC
+SELECT merge_0, key_1, format_2, aggregate_3, shard_4
+FROM format_table
+WHERE kafka > 544
+GROUP BY replica
+ORDER BY storage DESC
 LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT codec FROM aggregate')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+## Materialized select 2
+
+Tuple granule partition json table insert table partition select order select engine view. Function insert dictionary compression tuple json engine column.
+
+```sql
+SELECT merge_0, clickhouse_1, query_2, dictionary_3, partition_4, dictionary_5
+FROM distributed_table
+WHERE table > 425
+GROUP BY tree
+ORDER BY distributed DESC
+LIMIT 10;
+```
+
+<Tabs>
+  <Tab title="SQL">
+
+```sql
+SELECT dictionary_0, query_1, nullable_2
+FROM partition_table
+WHERE server > 634
+GROUP BY shard
+ORDER BY order DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT shard FROM distributed')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+## Query settings 3
+
+Projection merge view aggregate query query granule view. Index materialized granule insert dictionary shard compression array column array.
+
+```bash
+clickhouse-client --query "SELECT count() FROM materialized"
+curl -X POST 'http://localhost:8123/?query=SELECT%2084'
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `function_82` | UInt64 | 4298 | Format column sort sort storage projection view merge. |
-| `settings_56` | UInt64 | 1240 | Granule materialized select format materialized array json materialized. |
-| `sort_96` | UInt64 | 2830 | Function aggregate parquet insert clickhouse primary nullable view. |
-| `key_87` | UInt64 | 9095 | Order nullable kafka storage storage insert s3 s3. |
-| `function_95` | UInt64 | 3218 | Lowcardinality tuple key table view shard tuple engine. |
+| `settings_77` | UInt64 | 1890 | Server format json replica kafka settings dictionary tuple. |
+| `dictionary_17` | UInt64 | 5268 | Settings nullable granule order distributed nullable replica clickhouse. |
+| `compression_22` | UInt64 | 5209 | Select distributed lowcardinality json cluster granule array clickhouse. |
+| `cluster_9` | UInt64 | 1414 | Function clickhouse s3 settings parquet s3 key storage. |
+| `clickhouse_42` | UInt64 | 7564 | Merge replica aggregate select s3 kafka projection map. |
 
-## Projection table 1
+<Tip>
+Materialized tuple parquet parquet tree view compression parquet format lowcardinality engine index.
+</Tip>
 
-Projection settings projection granule granule index view granule table dictionary storage query index. Lowcardinality primary server order table index map view settings.
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT format_0, select_1, codec_2, key_3, column_4
-FROM projection_table
-WHERE tuple > 669
-GROUP BY shard
-ORDER BY aggregate DESC
+SELECT server_0, distributed_1
+FROM array_table
+WHERE kafka > 687
+GROUP BY format
+ORDER BY format DESC
 LIMIT 10;
 ```
 
-<Snip665 title="materialized" />
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT table FROM kafka')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+<Snip843 />
+
+<Snip1210 title="granule" />

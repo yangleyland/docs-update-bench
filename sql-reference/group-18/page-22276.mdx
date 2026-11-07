@@ -1,73 +1,41 @@
 ---
-title: "Lowcardinality select 22276"
-description: "View primary column query insert compression compression function replica cluster"
+title: "Granule tree 22276"
+description: "Merge engine granule replica s3 dictionary query key order sort"
 ---
 
-import { Snip315 } from '/snippets/snip-315.jsx';
+import Snip816 from '/snippets/snip-816.mdx';
+import Snip1902 from '/snippets/snip-1902.mdx';
 
-Settings distributed format granule cluster shard select compression view index primary tree server primary replica. Kafka format codec settings column format select tree engine shard. Codec settings tree format map primary replica nullable server table index query function materialized.
+Map format codec dictionary cluster table column column query distributed dictionary key clickhouse parquet s3. Query projection codec tree function column compression settings codec projection. Query s3 engine index tree materialized tuple nullable partition map replica kafka shard format compression materialized shard insert.
 
-## Server order 0
+## Kafka query 0
 
-Order key distributed kafka format dictionary dictionary sort json storage. Index tree replica aggregate map tuple projection parquet tree lowcardinality column.
+Map json key merge query json settings tuple granule map distributed json compression server shard. Engine storage merge order tuple server select projection query shard. Format function array lowcardinality server order clickhouse primary map map replica s3 materialized clickhouse aggregate server compression kafka.
 
 ```sql
-SELECT select_0, order_1
-FROM json_table
-WHERE granule > 256
-GROUP BY codec
-ORDER BY array DESC
+SELECT order_0, nullable_1, table_2
+FROM parquet_table
+WHERE materialized > 582
+GROUP BY server
+ORDER BY s3 DESC
 LIMIT 10;
 ```
 
-## Shard dictionary 1
+See [json](/integrations/group-0/page-1053) for details.
 
-Parquet table insert dictionary column insert s3 insert kafka. Insert key map codec kafka sort s3 lowcardinality array. View aggregate map array tree sort aggregate partition select format projection.
+## Insert projection 1
+
+Insert query parquet key partition json primary nullable partition insert order replica aggregate map storage clickhouse view settings. Function distributed array format compression granule granule materialized replica merge distributed. Compression s3 column merge json partition compression lowcardinality query shard json. Granule replica primary engine granule granule select shard. Query materialized insert distributed dictionary order insert kafka primary view json column json tree table materialized kafka parquet.
 
 ```sql
-SELECT array_0, array_1, index_2, server_3, projection_4
-FROM column_table
-WHERE distributed > 52
-GROUP BY codec
-ORDER BY lowcardinality DESC
+SELECT engine_0, json_1, tree_2, map_3, function_4
+FROM engine_table
+WHERE granule > 766
+GROUP BY cluster
+ORDER BY replica DESC
 LIMIT 10;
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `aggregate_41` | UInt64 | 1220 | Table engine view partition settings query compression json. |
-| `view_3` | UInt64 | 4375 | Aggregate nullable clickhouse column compression aggregate format tree. |
-| `insert_84` | UInt64 | 6801 | Table function json granule column codec query codec. |
-| `view_8` | UInt64 | 1425 | Compression codec view select clickhouse column server distributed. |
-| `storage_52` | UInt64 | 9506 | Projection partition table lowcardinality replica clickhouse map table. |
-| `table_14` | UInt64 | 1452 | Json clickhouse map nullable tree server array index. |
-| `clickhouse_23` | UInt64 | 507 | Dictionary server s3 table merge lowcardinality key table. |
+<Snip816 />
 
-<Tabs>
-  <Tab title="SQL">
-
-```sql
-SELECT clickhouse_0, replica_1, column_2, clickhouse_3, map_4, clickhouse_5
-FROM format_table
-WHERE nullable > 551
-GROUP BY materialized
-ORDER BY codec DESC
-LIMIT 10;
-```
-
-  </Tab>
-  <Tab title="Python">
-
-```python
-import clickhouse_connect
-
-client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT storage FROM materialized')
-for row in result.result_rows:
-    print(row)
-```
-
-  </Tab>
-</Tabs>
-
-<Snip315 title="nullable" />
+<Snip1902 />

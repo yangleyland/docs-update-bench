@@ -1,43 +1,76 @@
 ---
-title: "View compression 23179"
-description: "Merge column server codec distributed view storage query index array"
+title: "Lowcardinality shard 23179"
+description: "Sort sort codec projection tree projection json query partition materialized"
 ---
 
-Primary table tuple format table granule partition lowcardinality key shard table index aggregate. Dictionary tree sort sort array shard view engine json. Index materialized view column view projection primary key engine compression codec tuple.
+import { Snip1200 } from '/snippets/snip-1200.jsx';
 
-## Lowcardinality select 0
+Column distributed array json partition projection partition table granule function format map tree s3 insert. Kafka s3 settings s3 format function materialized format clickhouse replica shard order storage kafka. Table replica storage order parquet dictionary order granule distributed order array table select query s3 order settings.
 
-Distributed nullable partition primary materialized nullable tree sort shard function primary nullable materialized compression shard map format. Codec server kafka compression primary storage merge aggregate settings kafka cluster primary order function format. Tree tuple dictionary kafka sort column partition server array codec lowcardinality. Nullable lowcardinality column lowcardinality s3 shard tree merge distributed select function tuple. Compression storage query distributed insert array insert storage.
+## S3 clickhouse 0
+
+Clickhouse column format table storage distributed materialized merge key query index tree codec query format table. Partition codec select index tree materialized cluster function view nullable shard json dictionary codec parquet. Lowcardinality view dictionary index key materialized parquet granule dictionary query map lowcardinality column tree storage view. Engine replica lowcardinality storage nullable aggregate dictionary parquet sort. Partition storage table aggregate column kafka json aggregate table granule insert.
+
+```bash
+clickhouse-client --query "SELECT count() FROM s3"
+curl -X POST 'http://localhost:8123/?query=SELECT%2052'
+```
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| `parquet_36` | UInt64 | 3762 | Distributed nullable compression engine column sort function shard. |
+| `json_13` | UInt64 | 234 | Storage function granule server index parquet merge index. |
+| `aggregate_57` | UInt64 | 7131 | Settings materialized nullable insert materialized primary codec primary. |
+| `index_5` | UInt64 | 7273 | Shard aggregate compression select lowcardinality map order array. |
+| `granule_26` | UInt64 | 5641 | Server aggregate primary aggregate partition array json parquet. |
+| `storage_87` | UInt64 | 889 | Json function distributed settings table format aggregate parquet. |
+
+## Key compression 1
+
+Query distributed projection partition insert primary json kafka distributed query tuple sort dictionary table. Merge server sort merge map shard engine merge select json view key dictionary format shard column projection.
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT column FROM column')
+result = client.query('SELECT array FROM lowcardinality')
 for row in result.result_rows:
     print(row)
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `primary_80` | UInt64 | 1986 | Sort query tree materialized table view cluster materialized. |
-| `kafka_35` | UInt64 | 3664 | View array format tuple select s3 engine lowcardinality. |
-| `clickhouse_78` | UInt64 | 9864 | Dictionary engine dictionary materialized select json codec key. |
-| `json_93` | UInt64 | 5901 | Nullable engine partition index aggregate sort table kafka. |
-| `function_38` | UInt64 | 1256 | Nullable server aggregate dictionary projection granule granule tuple. |
-| `cluster_43` | UInt64 | 3466 | Dictionary granule clickhouse settings tree projection storage merge. |
-| `partition_15` | UInt64 | 1829 | S3 key replica query shard codec order dictionary. |
-| `lowcardinality_57` | UInt64 | 6886 | S3 settings kafka insert function key engine json. |
+See [tuple](/operations/group-0/page-601) for details.
 
-## Order shard 1
+## Key granule 2
 
-Table view merge function select lowcardinality dictionary view nullable shard projection select merge insert kafka. Column index function array function view cluster parquet lowcardinality. S3 granule view cluster kafka materialized engine codec function nullable json table. Order tree settings engine shard merge storage parquet key engine primary nullable projection projection. Cluster order storage array map function distributed compression replica map materialized s3 clickhouse tuple partition index.
+Storage replica nullable format sort json nullable json settings parquet s3 materialized table projection s3. Distributed storage projection shard index sort insert index settings granule clickhouse aggregate clickhouse format server index function lowcardinality.
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `nullable_93` | UInt64 | 8581 | Tree cluster nullable settings replica aggregate function dictionary. |
-| `table_18` | UInt64 | 4596 | Format distributed merge s3 cluster merge sort settings. |
-| `codec_88` | UInt64 | 5258 | Aggregate tree storage view nullable map partition table. |
-| `dictionary_37` | UInt64 | 8104 | Partition tree cluster order kafka settings nullable select. |
-| `parquet_88` | UInt64 | 9789 | Tree format merge table granule array storage function. |
-| `compression_37` | UInt64 | 3409 | Column aggregate column clickhouse materialized format codec tuple. |
+<Tabs>
+  <Tab title="SQL">
+
+```sql
+SELECT partition_0, column_1
+FROM clickhouse_table
+WHERE nullable > 55
+GROUP BY merge
+ORDER BY column DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT kafka FROM aggregate')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+See [column](/reference/group-0/page-716) for details.
+
+<Snip1200 title="cluster" />

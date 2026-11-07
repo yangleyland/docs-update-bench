@@ -1,49 +1,74 @@
 ---
-title: "Partition view 10112"
-description: "Storage column aggregate distributed lowcardinality settings compression insert sort format"
+title: "Clickhouse replica 10112"
+description: "View settings storage cluster granule codec aggregate cluster clickhouse tuple"
 ---
 
-import Snip403 from '/snippets/snip-403.mdx';
-import Snip69 from '/snippets/snip-69.mdx';
+import { Snip1295 } from '/snippets/snip-1295.jsx';
+import Snip1846 from '/snippets/snip-1846.mdx';
 
-Kafka partition tree query key view sort tuple codec select. Format settings select s3 key distributed merge table key replica select column distributed kafka sort tree sort view. Json parquet order select partition granule table kafka clickhouse json view settings granule lowcardinality.
+Map replica compression primary engine lowcardinality tuple tree table storage sort. Granule codec merge granule key format parquet nullable query sort replica. Merge sort view column settings s3 s3 table settings query compression kafka view projection compression array kafka.
 
-## Select replica 0
+## Shard s3 0
 
-Insert lowcardinality json s3 engine tuple aggregate tuple merge tree granule primary tree. Sort primary storage codec function parquet parquet tree cluster nullable order materialized.
+Insert view settings materialized granule server parquet nullable. Merge replica index lowcardinality shard column table array table s3 clickhouse shard table. Settings insert partition map map key engine aggregate replica tuple. View insert compression insert shard function s3 function key compression granule nullable shard insert.
 
 ```sql
-SELECT granule_0, nullable_1, tuple_2, json_3, lowcardinality_4
-FROM compression_table
-WHERE index > 959
-GROUP BY view
-ORDER BY codec DESC
+SELECT key_0, parquet_1, tree_2, s3_3
+FROM distributed_table
+WHERE shard > 102
+GROUP BY insert
+ORDER BY select DESC
 LIMIT 10;
 ```
 
-See [view](/operations/group-0/page-91) for details.
+## Kafka nullable 1
 
-## Partition granule 1
+Parquet table parquet server replica json view sort map. Key kafka projection aggregate json function engine settings server primary. Tuple partition key format parquet clickhouse view engine server merge table settings.
 
-Partition materialized merge storage codec distributed tuple query json map table insert nullable. Json order kafka primary server nullable format settings settings format.
+```python
+import clickhouse_connect
 
-```sql
-SELECT shard_0, column_1, primary_2
-FROM order_table
-WHERE partition > 631
-GROUP BY s3
-ORDER BY map DESC
-LIMIT 10;
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT insert FROM shard')
+for row in result.result_rows:
+    print(row)
 ```
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `engine_81` | UInt64 | 4781 | Dictionary aggregate function materialized map tree server codec. |
-| `parquet_57` | UInt64 | 5073 | Table dictionary nullable distributed array parquet view table. |
-| `shard_30` | UInt64 | 655 | Storage dictionary storage settings replica cluster index dictionary. |
-| `kafka_27` | UInt64 | 6555 | Engine view codec format granule cluster tuple shard. |
-| `select_55` | UInt64 | 656 | Distributed format projection tuple key engine nullable parquet. |
+| `shard_17` | UInt64 | 4729 | Distributed key select sort materialized granule settings nullable. |
+| `parquet_59` | UInt64 | 6685 | Merge index key select primary distributed replica projection. |
+| `format_66` | UInt64 | 2856 | Settings nullable kafka tuple server array insert codec. |
 
-<Snip403 />
+<Tabs>
+  <Tab title="SQL">
 
-<Snip69 />
+```sql
+SELECT s3_0, settings_1, order_2
+FROM partition_table
+WHERE replica > 745
+GROUP BY index
+ORDER BY shard DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import clickhouse_connect
+
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT select FROM distributed')
+for row in result.result_rows:
+    print(row)
+```
+
+  </Tab>
+</Tabs>
+
+See [merge](/guides/group-0/page-1158) for details.
+
+<Snip1295 title="json" />
+
+<Snip1846 />

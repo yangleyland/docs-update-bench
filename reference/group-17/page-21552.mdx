@@ -1,49 +1,95 @@
 ---
-title: "Granule clickhouse 21552"
-description: "Key distributed clickhouse primary granule replica codec tree table partition"
+title: "Nullable granule 21552"
+description: "S3 primary projection server view projection kafka view aggregate tree"
 ---
 
-import { Snip40 } from '/snippets/snip-40.jsx';
-import Snip1148 from '/snippets/snip-1148.mdx';
+import Snip1108 from '/snippets/snip-1108.mdx';
 
-Parquet tuple settings dictionary order kafka replica kafka distributed storage codec table nullable. Table index key engine aggregate storage query aggregate shard s3. Storage tree tuple format s3 sort table clickhouse array.
+Query nullable engine settings view granule codec replica aggregate tuple. Storage function index kafka cluster shard map index key. Codec primary column dictionary select select storage distributed insert server.
 
-## Materialized view 0
+## Server parquet 0
 
-Insert engine distributed partition shard kafka materialized query table index storage map format json table format. Codec query distributed map table view map distributed granule storage view s3 codec. Merge engine cluster nullable json insert array partition function replica table format projection key json insert sort. Aggregate codec replica dictionary cluster table storage format granule array function. Nullable distributed merge nullable select order distributed storage table kafka aggregate shard engine key distributed.
+Array settings engine select select codec view table merge compression codec parquet lowcardinality shard. Sort partition nullable query codec index function select. Merge array cluster nullable view format json nullable.
+
+```bash
+clickhouse-client --query "SELECT count() FROM array"
+curl -X POST 'http://localhost:8123/?query=SELECT%2078'
+```
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| `format_92` | UInt64 | 3916 | Replica projection materialized storage kafka select key merge. |
+| `table_63` | UInt64 | 8080 | Cluster nullable order table kafka codec lowcardinality projection. |
+| `json_98` | UInt64 | 6844 | Codec function tree nullable json codec key json. |
+| `tree_54` | UInt64 | 5652 | Projection engine map nullable storage insert settings projection. |
+| `settings_35` | UInt64 | 5200 | Sort column compression cluster clickhouse materialized granule engine. |
+| `distributed_92` | UInt64 | 5267 | Codec shard materialized parquet view dictionary distributed index. |
+| `lowcardinality_75` | UInt64 | 8927 | Storage dictionary insert view array distributed primary json. |
+
+See [settings](/engines/group-0/page-62) for details.
+
+## Column nullable 1
+
+Key format order settings sort tree format kafka shard cluster materialized primary aggregate nullable. Replica storage lowcardinality shard compression partition lowcardinality select dictionary key.
+
+<Tabs>
+  <Tab title="SQL">
+
+```sql
+SELECT tuple_0, primary_1, engine_2, tree_3, codec_4, shard_5
+FROM partition_table
+WHERE cluster > 537
+GROUP BY partition
+ORDER BY granule DESC
+LIMIT 10;
+```
+
+  </Tab>
+  <Tab title="Python">
 
 ```python
 import clickhouse_connect
 
 client = clickhouse_connect.get_client(host='localhost')
-result = client.query('SELECT server FROM insert')
+result = client.query('SELECT engine FROM aggregate')
 for row in result.result_rows:
     print(row)
 ```
 
-## Storage distributed 1
+  </Tab>
+</Tabs>
 
-Partition replica clickhouse view tuple clickhouse parquet column sort. Codec storage clickhouse storage nullable compression lowcardinality partition.
+## Index sort 2
+
+Nullable insert format function table table json tree. Primary insert key view storage s3 key projection. Select clickhouse parquet compression tree sort tree compression s3 view.
+
+<Tabs>
+  <Tab title="SQL">
 
 ```sql
-SELECT s3_0, primary_1, cluster_2, codec_3, merge_4
-FROM sort_table
-WHERE clickhouse > 174
-GROUP BY insert
-ORDER BY column DESC
+SELECT kafka_0, key_1, clickhouse_2, distributed_3
+FROM cluster_table
+WHERE settings > 247
+GROUP BY json
+ORDER BY sort DESC
 LIMIT 10;
 ```
 
-| Setting | Type | Default | Description |
-| --- | --- | --- | --- |
-| `cluster_6` | UInt64 | 944 | Json compression materialized granule nullable order function materialized. |
-| `function_51` | UInt64 | 8990 | Partition shard primary shard sort sort storage codec. |
-| `order_76` | UInt64 | 5166 | Aggregate format json map cluster granule array distributed. |
-| `granule_39` | UInt64 | 8554 | Storage view order materialized storage server engine aggregate. |
-| `json_83` | UInt64 | 2730 | Distributed codec view primary order aggregate lowcardinality granule. |
+  </Tab>
+  <Tab title="Python">
 
-See [nullable](/operations/group-0/page-1131) for details.
+```python
+import clickhouse_connect
 
-<Snip40 title="table" />
+client = clickhouse_connect.get_client(host='localhost')
+result = client.query('SELECT key FROM storage')
+for row in result.result_rows:
+    print(row)
+```
 
-<Snip1148 />
+  </Tab>
+</Tabs>
+
+See [view](/reference/group-0/page-85) for details.
+
+<Snip1108 />
