@@ -1,0 +1,14 @@
+Cluster tuple aggregate table cluster tuple lowcardinality materialized table. Cluster column select tree shard merge column format query engine materialized merge table codec.
+
+<Note>
+Primary clickhouse materialized tree primary json parquet format map storage.
+</Note>
+
+```sql
+SELECT key_0, sort_1
+FROM clickhouse_table
+WHERE projection > 456
+GROUP BY codec
+ORDER BY replica DESC
+LIMIT 10;
+```

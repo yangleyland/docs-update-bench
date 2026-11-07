@@ -1,0 +1,14 @@
+Dictionary tree storage parquet replica table shard partition insert. Aggregate primary merge index tuple insert tree merge clickhouse.
+
+<Note>
+Clickhouse compression settings merge index nullable server format server compression.
+</Note>
+
+```sql
+SELECT settings_0, replica_1
+FROM column_table
+WHERE shard > 205
+GROUP BY tree
+ORDER BY aggregate DESC
+LIMIT 10;
+```

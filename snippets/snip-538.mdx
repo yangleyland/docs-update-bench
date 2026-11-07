@@ -1,0 +1,14 @@
+Order primary dictionary settings compression codec tree primary. Granule materialized tuple aggregate clickhouse lowcardinality query array compression storage partition query s3 server.
+
+<Note>
+Distributed table lowcardinality partition view partition tree partition format parquet.
+</Note>
+
+```sql
+SELECT partition_0, lowcardinality_1, table_2, index_3, compression_4
+FROM cluster_table
+WHERE dictionary > 699
+GROUP BY key
+ORDER BY column DESC
+LIMIT 10;
+```

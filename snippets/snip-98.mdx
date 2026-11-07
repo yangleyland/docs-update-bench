@@ -1,0 +1,14 @@
+Dictionary aggregate granule materialized function shard query projection tree. Projection function server index lowcardinality select storage merge tree key map order map storage engine json format clickhouse.
+
+<Note>
+Settings nullable json sort replica sort index index tuple nullable.
+</Note>
+
+```sql
+SELECT partition_0, partition_1, tuple_2, partition_3, cluster_4, array_5
+FROM codec_table
+WHERE sort > 271
+GROUP BY key
+ORDER BY s3 DESC
+LIMIT 10;
+```
